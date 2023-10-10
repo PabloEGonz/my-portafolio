@@ -1,10 +1,12 @@
+import About from './components/About';
 import Projects from './components/Projects';
+import Skills from './components/Skills';
 import Socials from './components/Socials';
 export default function Home() {
   return (
     <>
       <main className='flex min-h-screen flex-col items-center justify-between'>
-        <section className='hero bg-base-200 min-h-screen'>
+        <section className='hero min-h-screen bg-base-200'>
           <div className='hero-content text-center'>
             <div className='max-w-md'>
               <h1 className='mb-5 text-6xl text-primary'>
@@ -22,7 +24,9 @@ export default function Home() {
           </div>
           <Socials />
         </section>
-      <Projects />
+        <Projects />
+        <About />
+        <Skills />
       </main>
     </>
   );
