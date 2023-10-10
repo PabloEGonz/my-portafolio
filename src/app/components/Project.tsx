@@ -32,12 +32,12 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
           </button>
           {isOpen && (
             <Modal handleClose={() => setIsOpen(false)} isOpen={isOpen}>
-              <>
+              <div>
                 <h3 className='text-lg font-bold'>Hello!</h3>
                 <p className='py-4'>
                   Press ESC key or click on ✕ button to close
                 </p>
-              </>
+              </div>
             </Modal>
           )}
         </div>

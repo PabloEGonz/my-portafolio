@@ -1,8 +1,8 @@
 import { NextPage } from 'next';
-import React from 'react';
+import React, { ReactNode }  from 'react';
 import ReactPortal from './ReactPortal';
 interface ModalProps {
-  children: React.ReactChildren | React.ReactChild;
+  children: ReactNode
   isOpen: boolean;
   handleClose: () => void;
 }
