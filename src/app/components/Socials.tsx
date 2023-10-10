@@ -6,7 +6,7 @@ interface Props {}
 
 const Socials: NextPage<Props> = ({}) => {
   return (
-    <div className='bg-purple rounded'>
+    <div className='bg-purple rounded fixed left-0'>
       <ul className='flex-col p-2'>
         <li className='m-4 text-2xl text-white hover:text-secondary hover:scale-110'>
           <a href='https://github.com/PabloEGonz'>

@@ -20,9 +20,26 @@ const config: Config = {
       primary: '#1a9e97',
       orange: '#ff5733',
       secondary: '#DEB992',
-      purple: '#8258ff'
+      purple: '#8258ff',
     },
   },
-  plugins: [],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          primary: '#1a9e97',
+          secondary: '#DEB992',
+          accent: '#1dcdbc',
+          neutral: '#2b3440',
+          'base-100': '#ffffff',
+          info: '#3abff8',
+          success: '#36d399',
+          warning: '#fbbd23',
+          error: '#f87272',
+        },
+      },
+    ],
+  },
+  plugins: [require('daisyui')],
 };
 export default config;
