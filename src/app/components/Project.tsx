@@ -2,13 +2,14 @@
 import { NextPage } from 'next';
 import Modal from './Modal';
 import React, { useState } from 'react';
+import Image,{ StaticImageData }  from 'next/image';
 
 interface ProjectProps {
   data: {
     name: string;
     description: string;
     paragraph: string;
-    image: string;
+    image: StaticImageData;
     techs: string[];
     live: string;
     repo: string;
@@ -19,9 +20,9 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className='card card-compact bg-base-100 w-96 shadow-xl'>
+    <div className='card card-compact w-96 bg-base-100 shadow-xl'>
       <figure>
-        <img src={data.image} alt='project image' />
+        <Image src={data.image} alt='project image'/>
       </figure>
       <div className='card-body'>
         <h2 className='card-title'>{data.name}</h2>
