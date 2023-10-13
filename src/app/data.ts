@@ -1,6 +1,8 @@
 import airQuality from '../../public/airQuality.png';
 import calculator from '../../public/calculator.png';
 import xmas from '../../public/xmas.png';
+import rentCar from '../../public/rentCar.png';
+import chineseZodiac from '../../public/chineseZodiac.png';
 
 const projects = [
   {
@@ -9,7 +11,7 @@ const projects = [
       'This is a user-friendly web application for easy car rental, offering car listings, reservations, and management features.',
     paragraph:
       'This full-stack web application streamlines the process, allowing users to browse a curated list of available cars, access detailed car information, make reservations, add or remove car listings, and effortlessly manage reservations.',
-    image: airQuality,
+    image: rentCar,
     techs: ['Ruby on Rails', 'React','Bootstrap', 'Jsx'],
     live: 'https://rent-a-car-front-end.onrender.com/',
     repo: 'https://github.com/PabloEGonz/full-stack-capstone-front-end',
@@ -17,7 +19,7 @@ const projects = [
   {
     name: 'Bugget App',
     description:
-      'This is a mobile web application where you can manage your budget',
+      'This is a mobile web application where you can manage your budget.',
     paragraph:
       "This user-friendly mobile web application takes the hassle out of budget management. By categorizing transactions, it provides a comprehensive view of your spending habits, empowering you to make more informed financial decisions. Whether you're tracking monthly expenses, managing personal spending, or planning for savings, this app puts the power of financial control at your fingertips.",
     image: airQuality,
@@ -39,10 +41,10 @@ const projects = [
   {
     name: 'Chinese Zodiac Animal',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+      'Web app to discover what zodiac animal you are.',
     paragraph:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
-    image: airQuality,
+      'This is a webpage that tells you what Chinese zodiac sign you are, you have to enter your date of birth and it will show your zodiac animal.',
+    image: chineseZodiac,
     techs: ['Vite', 'TypeScript', 'Bootstrap', 'SCCS', 'HTML'],
     live: 'https://knowyourchinesezodiacanimal.netlify.app/',
     repo: 'https://github.com/PabloEGonz/chineseZodiac',
