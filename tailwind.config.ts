@@ -21,6 +21,7 @@ const config: Config = {
       orange: '#ff5733',
       secondary: '#DEB992',
       purple: '#8258ff',
+      opacity: '#051622d0'
     },
   },
   daisyui: {
