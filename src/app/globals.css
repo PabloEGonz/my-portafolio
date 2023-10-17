@@ -13,10 +13,16 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
-    --wood: #051622;
+    --black: '#051622';
+    --white: '#fff';
+    --primary: '#1a9e97';
+    --orange: '#ff5733';
+    --secondary: '#DEB992';
+    --purple: '#8258ff';
+    --opacity: '#051622d0';
   }
 }
 
 body {
-  background-color: var(--wood);
+  background-color: var(--black);
 }
