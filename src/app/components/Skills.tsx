@@ -4,7 +4,7 @@ interface Props {}
 
 const Skills: NextPage<Props> = ({}) => {
   return (
-    <section className='grid grid-cols-3 gap-40'>
+    <section className='grid grid-cols-3 gap-40 pb-20'>
       <div>
         <h5 className='text-3xl font-bold mb-3'>Languages</h5>
         <ul className='grid gap-1'>

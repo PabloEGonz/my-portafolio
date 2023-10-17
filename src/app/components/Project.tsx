@@ -21,7 +21,7 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
 
   return (
     <>
-      <div className='card-compact card w-96 bg-base-100 shadow-xl'>
+      <div className='card card-compact w-96 bg-base-100 shadow-xl'>
         <figure>
           <Image src={data.image} alt='project image' />
         </figure>
@@ -29,8 +29,8 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
           <h2 className='card-title'>{data.name}</h2>
           <p>{data.description}</p>
           <div className='card-actions justify-end'>
-            <button className='btn' onClick={() => setIsOpen(true)}>
-              open modal
+            <button className='btn bg-purple text-white' onClick={() => setIsOpen(true)}>
+              See more
             </button>
           </div>
         </div>
@@ -39,7 +39,7 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
         <Modal handleClose={() => setIsOpen(false)} isOpen={isOpen}>
           <div className='col-span-3'>
             <Image src={data.image} alt='project image' className='rounded' />
-            <div className='flex p-6 gap-5'>
+            <div className='flex gap-5 p-6'>
               <button className='btn bg-purple text-white'>See live</button>
               <button className='btn bg-purple text-white'>
                 Go to Repository
@@ -49,6 +49,15 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
           <div className='col-span-2 text-black'>
             <h2 className='text-2xl font-bold'>{data.name}</h2>
             <p className='px-3'>{data.paragraph}</p>
+            <ul className='flex gap-3 pl-3 pt-3'>
+              {data.techs.map((tech) => {
+                return (
+                  <li className='rounded bg-purple p-1 text-sm' key={tech}>
+                    {tech}
+                  </li>
+                );
+              })}
+            </ul>
           </div>
         </Modal>
       )}
