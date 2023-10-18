@@ -22,35 +22,21 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
 
   return (
     <>
-        <div
-          className='bg-glass card-compact card w-96 shadow-xl'
-          data-atropos-offset='-5'
-        >
-          <figure className='atropos-scale'>
-            {
-              <Image
-                src={data.image}
-                alt='project image'
-                data-atropos-offset='-5'
-              />
-            }
-          </figure>
-          <div
-            className='atropos-rotate card-body text-white'
-            data-atropos-offset='0'
-          >
-            <h2 className='card-title'>{data.name}</h2>
-            <p>{data.description}</p>
-            <div className='atropos-inner card-actions justify-end'>
-              <button
-                className='hover:bg-pink btn bg-purple text-white'
-                onClick={() => setIsOpen(true)}
-              >
-                See more
-              </button>
-            </div>
+      <div className='bg-glass card-compact card w-96 shadow-xl'>
+        <figure>{<Image src={data.image} alt='project image' />}</figure>
+        <div className='card-body text-white'>
+          <h2 className='card-title'>{data.name}</h2>
+          <p>{data.description}</p>
+          <div className='card-actions justify-end'>
+            <button
+              className='hover:bg-pink btn bg-purple text-white'
+              onClick={() => setIsOpen(true)}
+            >
+              See more
+            </button>
           </div>
         </div>
+      </div>
       {isOpen && (
         <Modal handleClose={() => setIsOpen(false)} isOpen={isOpen}>
           <div className='col-span-3'>
