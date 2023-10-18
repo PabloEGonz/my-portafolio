@@ -1,6 +1,7 @@
-"use client"
+'use client';
 import { NextPage } from 'next';
 import Project from './Project';
+import Atropos from 'atropos/react';
 import projects from '../data';
 
 interface Props {}
@@ -8,11 +9,15 @@ interface Props {}
 const Projects: NextPage<Props> = ({}) => {
   return (
     <div className='p-6'>
-      <h2 className='text-4xl mb-12'>My Recent Projects</h2>
+      <h2 className='mb-12 text-4xl text-primary'>My Recent Projects</h2>
       <div className='grid grid-cols-2 gap-10'>
-      {projects.map((project) => {
-        return <Project data={project} />;
-      })}
+        {projects.map((project) => {
+          return (
+            <Atropos activeOffset={40} shadowScale={1.05}>
+              <Project data={project} />
+            </Atropos>
+          );
+        })}
       </div>
     </div>
   );

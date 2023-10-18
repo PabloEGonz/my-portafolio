@@ -3,6 +3,7 @@ import { NextPage } from 'next';
 import Modal from './Modal';
 import React, { useState } from 'react';
 import Image, { StaticImageData } from 'next/image';
+import 'atropos/css';
 
 interface ProjectProps {
   data: {
@@ -21,27 +22,44 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
 
   return (
     <>
-      <div className='card card-compact w-96 bg-base-100 shadow-xl'>
-        <figure>
-          <Image src={data.image} alt='project image' />
-        </figure>
-        <div className='card-body'>
-          <h2 className='card-title'>{data.name}</h2>
-          <p>{data.description}</p>
-          <div className='card-actions justify-end'>
-            <button className='btn bg-purple text-white' onClick={() => setIsOpen(true)}>
-              See more
-            </button>
+        <div
+          className='bg-glass card-compact card w-96 shadow-xl'
+          data-atropos-offset='-5'
+        >
+          <figure className='atropos-scale'>
+            {
+              <Image
+                src={data.image}
+                alt='project image'
+                data-atropos-offset='-5'
+              />
+            }
+          </figure>
+          <div
+            className='atropos-rotate card-body text-white'
+            data-atropos-offset='0'
+          >
+            <h2 className='card-title'>{data.name}</h2>
+            <p>{data.description}</p>
+            <div className='atropos-inner card-actions justify-end'>
+              <button
+                className='hover:bg-pink btn bg-purple text-white'
+                onClick={() => setIsOpen(true)}
+              >
+                See more
+              </button>
+            </div>
           </div>
         </div>
-      </div>
       {isOpen && (
         <Modal handleClose={() => setIsOpen(false)} isOpen={isOpen}>
           <div className='col-span-3'>
             <Image src={data.image} alt='project image' className='rounded' />
             <div className='flex gap-5 p-6'>
-              <button className='btn bg-purple text-white'>See live</button>
-              <button className='btn bg-purple text-white'>
+              <button className='hover:bg-pink btn bg-purple text-white'>
+                See live
+              </button>
+              <button className='hover:bg-pink btn bg-purple text-white'>
                 Go to Repository
               </button>
             </div>
@@ -52,7 +70,10 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
             <ul className='flex gap-3 pl-3 pt-3'>
               {data.techs.map((tech) => {
                 return (
-                  <li className='rounded bg-purple p-1 text-sm' key={tech}>
+                  <li
+                    className='hover:bg-pink rounded bg-purple p-1 text-sm text-white opacity-80'
+                    key={tech}
+                  >
                     {tech}
                   </li>
                 );

@@ -15,10 +15,11 @@ const config: Config = {
       },
     },
     colors: {
-      black: '#051622',
+      black: '#001621',
       white: '#fff',
       primary: '#1a9e97',
-      orange: '#ff5733',
+      pink: '#E60576',
+      glass: '#fafafa35',
       secondary: '#DEB992',
       purple: '#8258ff',
       opacity: '#051622d0'
