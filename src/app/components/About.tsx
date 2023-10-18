@@ -4,14 +4,14 @@ interface Props {}
 
 const About: NextPage<Props> = ({}) => {
   return (
-    <section className='min-h-screen p-52 text-secondary'>
+    <section id='about' className='text-secondary lg:p-52 p-10'>
       <h2 className='text-6xl'>About me</h2>
-      <p className='py-10 pr-64 text-2xl font-thin text-primary'>
+      <p className='text-2xl font-thin text-primary py-10 lg:pr-64'>
         Hello I’m a software developer! I can help you build a product , feature
         or website Look through some of my work and experience! If you like what
         you see and have a project you need coded, don’t hesitate to contact me.
       </p>
-      <button type='button' className='hover:bg-pink btn bg-purple text-white'>
+      <button type='button' className='btn bg-purple text-white hover:bg-pink'>
         Get my resume
       </button>
     </section>
