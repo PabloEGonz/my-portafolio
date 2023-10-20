@@ -57,7 +57,7 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
               {data.techs.map((tech) => {
                 return (
                   <li
-                    className='hover:bg-pink bg-purple p-2 text-sm text-white opacity-80'
+                    className='hover:bg-pink bg-purple p-1.5 lg:p-2 text-sm text-white opacity-80'
                     key={tech}
                   >
                     {tech}
