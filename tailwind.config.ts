@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
+  darkMode: 'class',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -22,7 +23,7 @@ const config: Config = {
       glass: '#fafafa35',
       secondary: '#DEB992',
       purple: '#8258ff',
-      opacity: '#051622d0'
+      opacity: '#051622d0',
     },
   },
   daisyui: {
