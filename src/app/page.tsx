@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <main className='flex flex-col items-center justify-between bg-black'>
-        <section className='hero min-h-screen'>
+        <section id='home' className='hero min-h-screen'>
           <div className='hero-content text-center'>
             <div className='max-w-md'>
               <h1 className='mb-5 text-6xl text-primary'>
@@ -22,9 +22,14 @@ export default function Home() {
                 trilingual, Stack: JavaScript, Ruby, Rails, React, Redux.
                 seeking growth and open to new challenges
               </p>
+              <div className='rounded bg-purple lg:hidden'>
+                <Socials direction='row' />
+              </div>
             </div>
           </div>
-          <Socials />
+          <div className='left-0 hidden rounded  bg-purple lg:fixed lg:block'>
+            <Socials direction='col' />
+          </div>
         </section>
         <Projects />
         <About />
