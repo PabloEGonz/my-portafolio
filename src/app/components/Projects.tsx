@@ -8,7 +8,7 @@ interface Props {}
 
 const Projects: NextPage<Props> = ({}) => {
   return (
-    <div className='p-6' id='projects'>
+    <div className='w-10/12' id='projects'>
       <h2 className='mb-12 text-4xl text-primary'>My Recent Projects</h2>
       <div className='grid gap-10 lg:grid-cols-2'>
         {projects.map((project) => {
