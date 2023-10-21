@@ -42,10 +42,10 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
           <div className='col-span-3'>
             <Image src={data.image} alt='project image' className='rounded' />
             <div className='flex gap-5 p-6'>
-              <button className='hover:bg-pink btn bg-purple text-white'>
+              <button className='hover:bg-pink btn bg-purple text-white active:bg-pink/50'>
                 See live
               </button>
-              <button className='hover:bg-pink btn bg-purple text-white'>
+              <button className='hover:bg-pink btn bg-purple text-white active:bg-pink/50'>
                 Go to Repository
               </button>
             </div>
@@ -57,7 +57,7 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
               {data.techs.map((tech) => {
                 return (
                   <li
-                    className='hover:bg-pink rounded bg-purple p-1 text-sm text-white opacity-80'
+                    className='hover:bg-pink bg-purple p-2 text-sm text-white opacity-80'
                     key={tech}
                   >
                     {tech}
