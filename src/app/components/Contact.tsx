@@ -7,7 +7,7 @@ const Contact: NextPage<Props> = ({}) => {
   return (
     <section
       id='contact'
-      className='flex min-h-screen flex-col lg:flex-row lg:p-52'
+      className='flex pb-11 lg:min-h-screen flex-col lg:flex-row lg:p-52'
     >
       <h3 className='w-1/1  p-10 text-3xl text-secondary lg:w-1/3 lg:p-0'>
         I'm always interested in hearing about new projects, so if you would
