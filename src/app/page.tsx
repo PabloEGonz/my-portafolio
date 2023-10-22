@@ -6,7 +6,7 @@ import Socials from './components/Socials';
 
 export default function Home() {
   return (
-    <main className='flex flex-col items-center justify-between bg-black'>
+    <main className='flex flex-col items-center justify-between dark:bg-black'>
       <section id='home' className='hero min-h-screen'>
         <div className='hero-content text-center'>
           <div className='max-w-md'>

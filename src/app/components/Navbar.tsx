@@ -1,4 +1,6 @@
+'use'
 import { NextPage } from 'next';
+import ThemeSwitch from './ThemeSwitch';
 
 interface Props {}
 
@@ -56,6 +58,7 @@ const Navbar: NextPage<Props> = ({}) => {
             <a href='#contact'>Contact</a>
           </li>
         </ul>
+        <ThemeSwitch />
       </div>
     </nav>
   );

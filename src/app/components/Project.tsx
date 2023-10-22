@@ -22,14 +22,14 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
 
   return (
     <>
-      <div className='bg-glass card-compact card shadow-xl'>
+      <div className='bg-primary/50 card-compact card shadow-xl dark:bg-glass'>
         <figure>{<Image src={data.image} alt='project image' />}</figure>
         <div className='card-body text-white'>
           <h2 className='card-title'>{data.name}</h2>
           <p>{data.description}</p>
           <div className='card-actions justify-end'>
             <button
-              className='hover:bg-pink btn bg-purple text-white'
+              className='btn bg-purple text-white hover:bg-pink'
               onClick={() => setIsOpen(true)}
             >
               See more
@@ -42,10 +42,10 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
           <div className='col-span-3'>
             <Image src={data.image} alt='project image' className='rounded' />
             <div className='flex gap-5 p-6'>
-              <button className='hover:bg-pink btn bg-purple text-white active:bg-pink/50'>
+              <button className='btn bg-purple text-white hover:bg-pink active:bg-pink/50'>
                 See live
               </button>
-              <button className='hover:bg-pink btn bg-purple text-white active:bg-pink/50'>
+              <button className='btn bg-purple text-white hover:bg-pink active:bg-pink/50'>
                 Go to Repository
               </button>
             </div>
@@ -57,7 +57,7 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
               {data.techs.map((tech) => {
                 return (
                   <li
-                    className='hover:bg-pink bg-purple p-1.5 lg:p-2 text-sm text-white opacity-80'
+                    className='bg-purple p-1.5 text-sm text-white opacity-80 hover:bg-pink lg:p-2'
                     key={tech}
                   >
                     {tech}
