@@ -40,7 +40,7 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
       {isOpen && (
         <Modal handleClose={() => setIsOpen(false)} isOpen={isOpen}>
           <div className='col-span-3'>
-            <Image src={data.image} alt='project image' className='rounded' />
+            <Image src={data.image} alt='project image' className='rounded aspect-video' />
             <div className='flex gap-5 p-6'>
               <button className='btn bg-purple text-white hover:bg-pink active:bg-pink/50'>
                 See live
@@ -50,14 +50,14 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
               </button>
             </div>
           </div>
-          <div className='col-span-2 text-black'>
+          <div className='col-span-2 text-black dark:text-white'>
             <h2 className='text-2xl font-bold'>{data.name}</h2>
             <p className='px-3'>{data.paragraph}</p>
             <ul className='flex gap-3 pl-3 pt-3'>
               {data.techs.map((tech) => {
                 return (
                   <li
-                    className='bg-purple p-1.5 text-sm text-white opacity-80 hover:bg-pink lg:p-2'
+                    className='bg-purple p-1.5 text-sm text-white opacity-80 hover:bg-pink w-max lg:p-2'
                     key={tech}
                   >
                     {tech}

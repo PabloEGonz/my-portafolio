@@ -1,4 +1,4 @@
-'use'
+'use';
 import { NextPage } from 'next';
 import ThemeSwitch from './ThemeSwitch';
 
@@ -6,7 +6,7 @@ interface Props {}
 
 const Navbar: NextPage<Props> = ({}) => {
   return (
-    <nav className='navbar fixed inset-x-0  left-0 top-0 z-10 border-b border-secondary bg-black p-6'>
+    <nav className='navbar fixed inset-x-0  left-0 top-0 z-10 justify-between border-b border-secondary bg-black p-6'>
       <div className='navbar-start lg:hidden'>
         <div className='dropdown '>
           <label tabIndex={0} className='btn btn-circle btn-ghost text-white'>
@@ -58,8 +58,8 @@ const Navbar: NextPage<Props> = ({}) => {
             <a href='#contact'>Contact</a>
           </li>
         </ul>
-        <ThemeSwitch />
       </div>
+      <ThemeSwitch />
     </nav>
   );
 };
