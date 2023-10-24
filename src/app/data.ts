@@ -3,6 +3,7 @@ import calculator from '../../public/calculator.png';
 import xmas from '../../public/xmas.png';
 import rentCar from '../../public/rentCar.png';
 import chineseZodiac from '../../public/chineseZodiac.png';
+import budget from '../../public/budget.png';
 
 const projects = [
   {
@@ -22,7 +23,7 @@ const projects = [
       'This is a mobile web application where you can manage your budget.',
     paragraph:
       "This user-friendly mobile web application takes the hassle out of budget management. By categorizing transactions, it provides a comprehensive view of your spending habits, empowering you to make more informed financial decisions. Whether you're tracking monthly expenses, managing personal spending, or planning for savings.",
-    image: airQuality,
+    image: budget,
     techs: ['Ruby on Rails', 'ERB', 'CSS3', 'Bootstrap'],
     live: 'https://budget-app-13xl.onrender.com/',
     repo: 'https://github.com/PabloEGonz/bugget-app',
