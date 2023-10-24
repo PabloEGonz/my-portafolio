@@ -32,17 +32,17 @@ const Modal: NextPage<ModalProps> = ({ children, isOpen, handleClose }) => {
         <div className='fixed left-0 top-0 z-40 flex h-screen w-screen justify-center bg-opacity text-center'>
           <div
             id='my_modal_3'
-            className='fixed inset-y-28 box-border flex h-fit w-11/12 flex-col overflow-hidden rounded bg-white dark:bg-black dark:border-2 border-white p-5 lg:inset-y-48 lg:w-3/4'
+            className='lg:inset-y-42 fixed inset-y-28 box-border flex h-fit w-11/12 flex-col overflow-hidden rounded border-white bg-white p-5 dark:border-2 dark:bg-black lg:w-3/4'
           >
             <form method='dialog'>
               <button
-                className='btn btn-circle btn-ghost btn-sm absolute right-2 top-2 dark:text-white text-2xl'
+                className='btn btn-circle btn-ghost btn-sm absolute right-2 top-2 text-2xl dark:text-white'
                 onClick={handleClose}
               >
                 ✕
               </button>
             </form>
-            <div className='grid lg:grid-cols-5 pt-5'>{children}</div>
+            <div className='grid pt-5 lg:grid-cols-5'>{children}</div>
           </div>
         </div>
       </>
