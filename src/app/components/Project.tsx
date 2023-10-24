@@ -22,7 +22,7 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
 
   return (
     <>
-      <div className='bg-primary/50 card-compact card shadow-xl dark:bg-glass'>
+      <div className='card-compact card bg-primary/50 shadow-xl dark:bg-glass'>
         <figure>{<Image src={data.image} alt='project image' />}</figure>
         <div className='card-body text-white'>
           <h2 className='card-title'>{data.name}</h2>
@@ -40,7 +40,11 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
       {isOpen && (
         <Modal handleClose={() => setIsOpen(false)} isOpen={isOpen}>
           <div className='col-span-3'>
-            <Image src={data.image} alt='project image' className='rounded aspect-video' />
+            <Image
+              src={data.image}
+              alt='project image'
+              className='aspect-video rounded'
+            />
             <div className='flex gap-5 p-6'>
               <button className='btn bg-purple text-white hover:bg-pink active:bg-pink/50'>
                 See live
@@ -53,11 +57,11 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
           <div className='col-span-2 text-black dark:text-white'>
             <h2 className='text-2xl font-bold'>{data.name}</h2>
             <p className='px-3'>{data.paragraph}</p>
-            <ul className='flex gap-3 pl-3 pt-3'>
+            <ul className='flex h-fit gap-3 pl-3 pt-3 justify-center'>
               {data.techs.map((tech) => {
                 return (
                   <li
-                    className='bg-purple p-1.5 text-sm text-white opacity-80 hover:bg-pink w-max lg:p-2'
+                    className='w-max bg-purple/80 p-1.5 text-sm text-white hover:bg-pink lg:p-2'
                     key={tech}
                   >
                     {tech}
