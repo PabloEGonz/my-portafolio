@@ -10,7 +10,7 @@ const Contact: NextPage<Props> = ({}) => {
       className='flex pb-11 lg:min-h-screen flex-col lg:flex-row lg:p-52'
     >
       <h3 className='w-1/1  p-10 text-3xl text-secondary lg:w-1/3 lg:p-0'>
-        I'm always interested in hearing about new projects, so if you would
+        I&apos;m always interested in hearing about new projects, so if you would
         like to get in contact with me.
       </h3>
       <form
