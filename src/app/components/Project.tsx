@@ -46,18 +46,24 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
               className='aspect-video rounded'
             />
             <div className='flex gap-5 p-6'>
-              <button className='btn bg-purple text-white hover:bg-pink active:bg-pink/50'>
+              <a
+                href={data.live}
+                className='btn bg-purple text-white hover:bg-pink active:bg-pink/50'
+              >
                 See live
-              </button>
-              <button className='btn bg-purple text-white hover:bg-pink active:bg-pink/50'>
+              </a>
+              <a
+                href={data.repo}
+                className='btn bg-purple text-white hover:bg-pink active:bg-pink/50'
+              >
                 Go to Repository
-              </button>
+              </a>
             </div>
           </div>
           <div className='col-span-2 text-black dark:text-white'>
             <h2 className='text-2xl font-bold'>{data.name}</h2>
             <p className='px-3'>{data.paragraph}</p>
-            <ul className='flex h-fit gap-3 pl-3 pt-3 justify-center'>
+            <ul className='flex h-fit justify-center gap-3 pl-3 pt-3'>
               {data.techs.map((tech) => {
                 return (
                   <li
