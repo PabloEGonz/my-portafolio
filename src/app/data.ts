@@ -18,7 +18,7 @@ const projects = [
     repo: 'https://github.com/PabloEGonz/full-stack-capstone-front-end',
   },
   {
-    name: 'Bugget App',
+    name: 'Budget App',
     description:
       'This is a mobile web application where you can manage your budget.',
     paragraph:
