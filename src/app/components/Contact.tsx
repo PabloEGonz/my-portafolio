@@ -7,16 +7,16 @@ const Contact: NextPage<Props> = ({}) => {
   return (
     <section
       id='contact'
-      className='flex pb-11 lg:min-h-screen flex-col lg:flex-row lg:p-52'
+      className='flex flex-col pb-11 lg:min-h-screen lg:flex-row lg:p-52'
     >
       <h3 className='w-1/1  p-10 text-3xl text-secondary lg:w-1/3 lg:p-0'>
-        I&apos;m always interested in hearing about new projects, so if you would
-        like to get in contact with me.
+        I&apos;m always interested in hearing about new projects, so if you
+        would like to get in contact with me.
       </h3>
       <form
         action='https://formspree.io/f/xwkjrpwp'
         method='post'
-        className='flex flex-col gap-5 lg:px-20 px-10 lg:w-2/3'
+        className='flex flex-col gap-5 px-10 lg:w-2/3 lg:px-20'
       >
         <input
           type='text'
@@ -36,7 +36,10 @@ const Contact: NextPage<Props> = ({}) => {
           placeholder='Write me Something'
           className='textarea textarea-bordered'
         ></textarea>
-        <button type='submit' className='btn bg-purple hover:bg-pink lg:w-1/6'>
+        <button
+          type='submit'
+          className='btn bg-purple text-white hover:bg-pink lg:w-1/6'
+        >
           Submit
         </button>
       </form>
