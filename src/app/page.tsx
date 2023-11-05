@@ -16,10 +16,13 @@ export default function Home() {
             <h2 className='mb-6 bg-primary text-4xl text-secondary'>
               I&apos;m a full-stack software developer
             </h2>
-            <p className='py-6 text-secondary'>
-              Full-Stack Developer, Ruby is my go-to programming language,
-              trilingual, Stack: JavaScript, Ruby, Rails, React, Redux. seeking
-              growth and open to new challenges
+            <p className='py-6 text-secondary font-sans text-lg font-light'>
+              Certified Full-stack web developer with experience in
+              collaborative environments, persistent in overcoming obstacles
+              with a positive mindset. Constantly seeking new learning
+              opportunities and demonstrating a strong determination to achieve
+              set goals. Skilled in building web applications using Ruby on
+              Rails, React, and Next.js.
             </p>
             <div className='rounded bg-purple lg:hidden'>
               <Socials direction='row' />
