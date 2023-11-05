@@ -10,8 +10,9 @@ const Contact: NextPage<Props> = ({}) => {
       className='flex flex-col pb-11 lg:min-h-screen lg:flex-row lg:p-52'
     >
       <h3 className='w-1/1  p-10 text-3xl text-secondary lg:w-1/3 lg:p-0'>
-        I&apos;m always interested in hearing about new projects, so if you
-        would like to get in contact with me.
+        Let&apos;s connect and discuss how I can help bring your digital
+        projects to life. Reach out through this form, and let&apos;s make something
+        great together!
       </h3>
       <form
         action='https://formspree.io/f/xwkjrpwp'
