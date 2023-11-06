@@ -6,7 +6,7 @@ interface Props {}
 
 const Navbar: NextPage<Props> = ({}) => {
   return (
-    <nav className='navbar fixed inset-x-0  left-0 top-0 z-10 justify-between border-b border-secondary bg-black p-6'>
+    <nav className='navbar fixed inset-x-0  left-0 top-0 z-10 justify-between border-b border-secondary bg-primary p-6 dark:bg-black'>
       <div className='navbar-start lg:hidden'>
         <div className='dropdown '>
           <label tabIndex={0} className='btn btn-circle btn-ghost text-white'>
@@ -28,16 +28,16 @@ const Navbar: NextPage<Props> = ({}) => {
             tabIndex={0}
             className='menu dropdown-content rounded-box z-[1] mt-3 w-52 bg-black p-2 shadow'
           >
-            <li className='text-primary hover:text-secondary'>
+            <li className='dark:text-primary text-white hover:font-semibold dark:hover:text-secondary hover:text-secondary'>
               <a href='#home'>Home</a>
             </li>
-            <li className='text-primary hover:text-secondary'>
+            <li className='dark:text-primary text-white hover:font-semibold dark:hover:text-secondary hover:text-secondary'>
               <a href='#projects'>Projects</a>
             </li>
-            <li className='text-primary hover:text-secondary'>
+            <li className='dark:text-primary text-white hover:font-semibold dark:hover:text-secondary hover:text-secondary'>
               <a href='#about'>About</a>
             </li>
-            <li className='text-primary hover:text-secondary'>
+            <li className='dark:text-primary text-white hover:font-semibold dark:hover:text-secondary hover:text-secondary'>
               <a href='#contact'>Contact</a>
             </li>
           </ul>
@@ -45,16 +45,16 @@ const Navbar: NextPage<Props> = ({}) => {
       </div>
       <div>
         <ul className='hidden w-4/6  gap-12 lg:flex '>
-          <li className='text-primary hover:text-secondary'>
+          <li className='dark:text-primary text-white hover:font-semibold dark:hover:text-secondary hover:text-secondary'>
             <a href='#home'>Home</a>
           </li>
-          <li className='text-primary hover:text-secondary'>
+          <li className='dark:text-primary text-white hover:font-semibold dark:hover:text-secondary hover:text-secondary'>
             <a href='#projects'>Projects</a>
           </li>
-          <li className='text-primary hover:text-secondary'>
+          <li className='dark:text-primary text-white hover:font-semibold dark:hover:text-secondary hover:text-secondary'>
             <a href='#about'>About</a>
           </li>
-          <li className='text-primary hover:text-secondary'>
+          <li className='dark:text-primary text-white hover:font-semibold dark:hover:text-secondary hover:text-secondary'>
             <a href='#contact'>Contact</a>
           </li>
         </ul>
