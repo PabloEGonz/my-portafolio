@@ -3,7 +3,12 @@ import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Socials from './components/Socials';
+import { Rubik } from 'next/font/google';
 
+const rubik = Rubik({
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  subsets: ['latin'],
+});
 export default function Home() {
   return (
     <main className='flex flex-col items-center justify-between dark:bg-black'>
@@ -16,7 +21,7 @@ export default function Home() {
             <h2 className='mb-6 bg-primary text-4xl text-secondary'>
               I&apos;m a full-stack software developer
             </h2>
-            <p className='py-6 text-secondary font-sans text-lg font-light'>
+            <p className={rubik.className + `py-6 font-sans text-lg font-light text-secondary`}>
               Certified Full-stack web developer with experience in
               collaborative environments, persistent in overcoming obstacles
               with a positive mindset. Constantly seeking new learning
