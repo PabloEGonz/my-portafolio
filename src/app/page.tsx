@@ -21,7 +21,7 @@ export default function Home() {
             <h2 className='mb-6 bg-primary text-4xl text-secondary'>
               I&apos;m a full-stack software developer
             </h2>
-            <p className={rubik.className + `py-6 font-sans text-lg font-light text-secondary`}>
+            <p className={rubik.className + `py-6 font-sans text-lg font-light dark:text-secondary`}>
               Certified Full-stack web developer with experience in
               collaborative environments, persistent in overcoming obstacles
               with a positive mindset. Constantly seeking new learning
