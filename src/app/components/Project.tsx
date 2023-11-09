@@ -22,7 +22,7 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
 
   return (
     <>
-      <div className='card card-compact bg-primary/50 border-secondary dark:border-none border dark:bg-glass'>
+      <div className='card card-compact bg-primary/50 border-secondary dark:border-none border-2 dark:bg-glass'>
         <figure>{<Image src={data.image} alt='project image' />}</figure>
         <div className='card-body text-white'>
           <h2 className='card-title'>{data.name}</h2>
