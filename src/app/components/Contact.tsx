@@ -11,8 +11,8 @@ const Contact: NextPage<Props> = ({}) => {
     >
       <h3 className='w-1/1  p-10 text-3xl text-secondary lg:w-1/3 lg:p-0'>
         Let&apos;s connect and discuss how I can help bring your digital
-        projects to life. Reach out through this form, and let&apos;s make something
-        great together!
+        projects to life. Reach out through this form, and let&apos;s make
+        something great together!
       </h3>
       <form
         action='https://formspree.io/f/xwkjrpwp'
@@ -39,7 +39,7 @@ const Contact: NextPage<Props> = ({}) => {
         ></textarea>
         <button
           type='submit'
-          className='btn bg-purple text-white hover:bg-pink lg:w-1/6'
+          className='btn bg-purple text-white hover:bg-pink lg:w-fit'
         >
           Submit
         </button>
