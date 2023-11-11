@@ -1,6 +1,7 @@
-'use';
+'use client';
 import { NextPage } from 'next';
 import ThemeSwitch from './ThemeSwitch';
+import NavList from './NavItem';
 
 interface Props {}
 
@@ -28,36 +29,23 @@ const Navbar: NextPage<Props> = ({}) => {
             tabIndex={0}
             className='menu dropdown-content rounded-box z-[1] mt-3 w-52 bg-black p-2 shadow'
           >
-            <li className='dark:text-primary text-white hover:font-semibold dark:hover:text-secondary hover:text-secondary'>
+            <li className='text-white hover:font-semibold hover:text-secondary dark:text-primary dark:hover:text-secondary'>
               <a href='#home'>Home</a>
             </li>
-            <li className='dark:text-primary text-white hover:font-semibold dark:hover:text-secondary hover:text-secondary'>
+            <li className='text-white hover:font-semibold hover:text-secondary dark:text-primary dark:hover:text-secondary'>
               <a href='#projects'>Projects</a>
             </li>
-            <li className='dark:text-primary text-white hover:font-semibold dark:hover:text-secondary hover:text-secondary'>
+            <li className='text-white hover:font-semibold hover:text-secondary dark:text-primary dark:hover:text-secondary'>
               <a href='#about'>About</a>
             </li>
-            <li className='dark:text-primary text-white hover:font-semibold dark:hover:text-secondary hover:text-secondary'>
+            <li className='text-white hover:font-semibold hover:text-secondary dark:text-primary dark:hover:text-secondary'>
               <a href='#contact'>Contact</a>
             </li>
           </ul>
         </div>
       </div>
       <div>
-        <ul className='hidden w-4/6  gap-12 lg:flex '>
-          <li className='dark:text-primary text-white hover:font-semibold dark:hover:text-secondary hover:text-secondary'>
-            <a href='#home'>Home</a>
-          </li>
-          <li className='dark:text-primary text-white hover:font-semibold dark:hover:text-secondary hover:text-secondary'>
-            <a href='#projects'>Projects</a>
-          </li>
-          <li className='dark:text-primary text-white hover:font-semibold dark:hover:text-secondary hover:text-secondary'>
-            <a href='#about'>About</a>
-          </li>
-          <li className='dark:text-primary text-white hover:font-semibold dark:hover:text-secondary hover:text-secondary'>
-            <a href='#contact'>Contact</a>
-          </li>
-        </ul>
+        <NavList />
       </div>
       <ThemeSwitch />
     </nav>
