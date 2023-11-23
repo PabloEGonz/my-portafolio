@@ -53,6 +53,7 @@ const config: Config = {
       secondary: '#DEB992',
       purple: '#8258ff',
       opacity: '#051622d0',
+      sun: '#facc15',
     },
   },
   daisyui: {

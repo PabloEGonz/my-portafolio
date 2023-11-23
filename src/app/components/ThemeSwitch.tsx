@@ -20,7 +20,7 @@ const ThemeSwitch: NextPage<Props> = ({}) => {
   }
   if (currentTheme === 'dark') {
     return (
-      <label className='swap swap-rotate text-white bg-dark'>
+      <label className='bg-dark swap swap-rotate text-white hover:text-sun'>
         <input type='checkbox' onClick={(e) => setTheme('light')} />
         <svg
           className='h-8 w-8 fill-current'
@@ -33,7 +33,7 @@ const ThemeSwitch: NextPage<Props> = ({}) => {
     );
   } else {
     return (
-      <label className='swap swap-rotate text-white bg-dark'>
+      <label className='bg-dark swap swap-rotate text-white hover:text-neutral-500'>
         <input type='checkbox' onClick={(e) => setTheme('dark')} />
         <svg
           className='h-8 w-8 fill-current'
