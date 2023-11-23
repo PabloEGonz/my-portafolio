@@ -9,7 +9,7 @@ const rubik = Rubik({
   weight: ['300', '400', '500', '600', '700', '800', '900'],
   subsets: ['latin'],
 });
-export const type =
+const type =
   'lg:relative lg:w-max lg:before:absolute lg:before:inset-0 lg:before:h-20 lg:before:animate-typewriter before:bg-white dark:before:bg-black  lg:after:absolute lg:after:inset-0 lg:after:w-0.5 lg:after:w-1 lg:after:animate-caret lg:after:bg-black';
 export default function Home() {
   return (
