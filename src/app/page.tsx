@@ -16,11 +16,11 @@ export default function Home() {
     <main className='flex flex-col items-center justify-between dark:bg-black'>
       <section id='home' className='hero min-h-screen'>
         <div className='hero-content text-center'>
-          <div className='lg:max-w-2xl mt-24 lg:mt-2'>
+          <div className='mt-24 lg:mt-2 lg:max-w-2xl'>
             <h1 className={type + ' mb-5 text-6xl text-primary'}>
               Hey there I&apos;m Ezequiel
             </h1>
-            <h2 className='mx-auto mb-6 max-w-md bg-primary text-4xl text-secondary'>
+            <h2 className='transition duration-1000 mx-auto py-1 mb-6 max-w-md bg-primary text-4xl text-secondary hover:bg-secondary dark:hover:text-white hover:text-primary'>
               I&apos;m a full-stack software developer
             </h2>
             <p
