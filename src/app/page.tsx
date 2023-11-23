@@ -16,7 +16,7 @@ export default function Home() {
     <main className='flex flex-col items-center justify-between dark:bg-black'>
       <section id='home' className='hero min-h-screen'>
         <div className='hero-content text-center'>
-          <div className='lg:max-w-2xl'>
+          <div className='lg:max-w-2xl mt-24 lg:mt-2'>
             <h1 className={type + ' mb-5 text-6xl text-primary'}>
               Hey there I&apos;m Ezequiel
             </h1>
