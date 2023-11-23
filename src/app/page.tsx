@@ -9,19 +9,26 @@ const rubik = Rubik({
   weight: ['300', '400', '500', '600', '700', '800', '900'],
   subsets: ['latin'],
 });
+export const type =
+  'lg:relative lg:w-max lg:before:absolute lg:before:inset-0 lg:before:h-20 lg:before:animate-typewriter lg:before:bg-white lg:after:absolute lg:after:inset-0 lg:after:w-0.5 lg:after:w-1 lg:after:animate-caret lg:after:bg-black';
 export default function Home() {
   return (
     <main className='flex flex-col items-center justify-between dark:bg-black'>
       <section id='home' className='hero min-h-screen'>
         <div className='hero-content text-center'>
-          <div className='max-w-md'>
-            <h1 className='mb-5 text-6xl text-primary'>
+          <div className='lg:max-w-2xl'>
+            <h1 className={type + ' mb-5 text-6xl text-primary'}>
               Hey there I&apos;m Ezequiel
             </h1>
-            <h2 className='mb-6 bg-primary text-4xl text-secondary'>
+            <h2 className='mx-auto mb-6 max-w-md bg-primary text-4xl text-secondary'>
               I&apos;m a full-stack software developer
             </h2>
-            <p className={rubik.className + ' py-6 font-sans text-lg font-light dark:text-secondary'}>
+            <p
+              className={
+                rubik.className +
+                ' mx-auto max-w-md py-6 font-sans text-lg font-light dark:text-secondary'
+              }
+            >
               Certified Full-stack web developer with experience in
               collaborative environments, persistent in overcoming obstacles
               with a positive mindset. Constantly seeking new learning
