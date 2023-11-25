@@ -22,7 +22,7 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
 
   return (
     <>
-      <div className='card card-compact bg-primary/50 border-secondary dark:border-none border-2 dark:bg-glass'>
+      <div className='card-compact card border-2 border-secondary bg-primary/50 dark:border-none dark:bg-glass'>
         <figure>{<Image src={data.image} alt='project image' />}</figure>
         <div className='card-body text-white'>
           <h2 className='card-title'>{data.name}</h2>
@@ -48,12 +48,16 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
             <div className='flex gap-5 p-6'>
               <a
                 href={data.live}
+                target='_blank'
+                rel='noopener noreferrer'
                 className='btn bg-purple text-white hover:bg-pink active:bg-pink/50'
               >
                 See live
               </a>
               <a
                 href={data.repo}
+                target='_blank'
+                rel='noopener noreferrer'
                 className='btn bg-purple text-white hover:bg-pink active:bg-pink/50'
               >
                 Go to Repository
