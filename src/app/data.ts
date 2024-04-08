@@ -4,8 +4,19 @@ import xmas from '../../public/xmas.png';
 import rentCar from '../../public/rentCar.png';
 import chineseZodiac from '../../public/chineseZodiac.png';
 import budget from '../../public/budget.png';
+import bakery from '../../public/bakery.jpg';
 
 const projects = [
+  {
+    name: 'Bakery E-commerce Website',
+    description:
+      'This is a full-stack e-commerce website for a French bakery, offering a wide range of French baked goods.',
+    paragraph: `This full-stack e-commerce website provides users with a seamless shopping experience. Users can browse a wide selection of French baked goods, view detailed product information, add items to their cart, and complete the checkout process. The website also includes an user panel, allowing user see previous orders, and customer information.`,
+    image: bakery,
+    techs: ['Ruby on Rails', 'Tailwind', 'CSS', 'JavaScript'],
+    live: 'https://boulangerie-e-commerce.onrender.com/',
+    repo: 'https://github.com/PabloEGonz/boulangerie-e-commerce',
+  },
   {
     name: 'Rent a Car Website',
     description:
