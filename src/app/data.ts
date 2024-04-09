@@ -11,7 +11,7 @@ const projects = [
     name: 'Bakery E-commerce Website',
     description:
       'This is a full-stack e-commerce website for a French bakery, offering a wide range of French baked goods.',
-    paragraph: `This full-stack e-commerce website provides users with a seamless shopping experience. Users can browse a wide selection of French baked goods, view detailed product information, add items to their cart, and complete the checkout process. The website also includes an user panel, allowing user see previous orders, and customer information.`,
+    paragraph: `This full-stack e-commerce website provides users with a seamless shopping experience. Users can browse a wide selection of French baked goods, view detailed product information, add items to their cart, and complete the checkout process. The website also includes a user panel, allowing users to see previous orders and customer information.`,
     image: bakery,
     techs: ['Ruby on Rails', 'Tailwind', 'CSS', 'JavaScript'],
     live: 'https://boulangerie-e-commerce.onrender.com/',
@@ -47,7 +47,7 @@ const projects = [
       'This web app provides users with an easy way to monitor air quality in different cities. Users can view air quality information for each city, add new cities, remove cities, and learn about the parameters used to determine air quality levels.',
     image: airQuality,
     techs: ['React', 'JSX', 'Bootstrap', 'CSS3'],
-    live: 'https://air-quality-app-r9g3.onrender.com/',
+    live: 'https://cities-air-quality-pg.netlify.app/',
     repo: 'https://github.com/PabloEGonz/air-quality-app',
   },
   {
