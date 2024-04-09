@@ -5,8 +5,18 @@ import rentCar from '../../public/rentCar.png';
 import chineseZodiac from '../../public/chineseZodiac.png';
 import budget from '../../public/budget.png';
 import bakery from '../../public/bakery.jpg';
-
+import events from '../../public/events.jpg';
 const projects = [
+  {
+    name: 'Static Website',
+    description:
+      'This is a static website for a fictional company that provides assistance for private events.',
+    paragraph: `This static website showcases the services offered by a fictional company that provides assistance for private events. The website includes a homepage, about page, services page, and contact page. It also features a responsive design, ensuring a seamless experience across various devices.`,
+    image: events,
+    techs: ['React', 'Next.js', 'TypeScript', 'Tailwind', 'Redux'],
+    live: 'https://eventswebsite.vercel.app/',
+    repo: 'https://github.com/PabloEGonz/events-website-public',
+  },
   {
     name: 'Bakery E-commerce Website',
     description:
