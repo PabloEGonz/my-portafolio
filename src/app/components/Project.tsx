@@ -22,8 +22,14 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
 
   return (
     <>
-      <div className='card-compact card border-2 border-secondary bg-primary/50 dark:border-none dark:bg-glass'>
-        <Image src={data.image} height={400} width={500}  className="w-full" alt='project image' />
+      <div className='card card-compact overflow-hidden border-2 border-secondary bg-primary/50 dark:border-none dark:bg-glass'>
+        <Image
+          src={data.image}
+          height={500}
+          width={800}
+          className='w-full'
+          alt='project image'
+        />
         <div className='card-body text-white'>
           <h2 className='card-title'>{data.name}</h2>
           <p>{data.description}</p>
