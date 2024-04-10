@@ -1,8 +1,8 @@
 'use client';
 import { NextPage } from 'next';
+import Image from 'next/image';
 import Modal from './Modal';
 import React, { useState } from 'react';
-import Image, { StaticImageData } from 'next/image';
 import 'atropos/css';
 
 interface ProjectProps {
@@ -10,7 +10,7 @@ interface ProjectProps {
     name: string;
     description: string;
     paragraph: string;
-    image: StaticImageData;
+    image: string;
     techs: string[];
     live: string;
     repo: string;
@@ -23,7 +23,7 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
   return (
     <>
       <div className='card-compact card border-2 border-secondary bg-primary/50 dark:border-none dark:bg-glass'>
-        <figure>{<Image src={data.image} alt='project image' />}</figure>
+        <Image src={data.image} height={400} width={500}  className="w-full" alt='project image' />
         <div className='card-body text-white'>
           <h2 className='card-title'>{data.name}</h2>
           <p>{data.description}</p>
@@ -43,6 +43,8 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
             <Image
               src={data.image}
               alt='project image'
+              width={800}
+              height={500}
               className='aspect-video rounded'
             />
             <div className='flex gap-5 p-6'>
@@ -71,7 +73,7 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
               {data.techs.map((tech) => {
                 return (
                   <li
-                    className='w-max bg-purple/80 p-1.5 text-sm text-white hover:bg-pink lg:p-2'
+                    className='w-max bg-purple/80 p-1.5 text-xs text-white hover:bg-pink lg:p-2'
                     key={tech}
                   >
                     {tech}
