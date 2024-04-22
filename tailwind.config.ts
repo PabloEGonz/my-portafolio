@@ -54,6 +54,7 @@ const config: Config = {
       purple: '#8258ff',
       opacity: '#051622d0',
       sun: '#facc15',
+      red: '#ff453a',
     },
   },
   daisyui: {
