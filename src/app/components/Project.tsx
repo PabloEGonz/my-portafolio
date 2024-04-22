@@ -4,16 +4,18 @@ import Image from 'next/image';
 import Modal from './Modal';
 import React, { useState } from 'react';
 import 'atropos/css';
+import ProjectButtons from './ProjectButtons';
 
-interface ProjectProps {
+export interface ProjectProps {
   data: {
     name: string;
     description: string;
     paragraph: string;
     image: string;
     techs: string[];
-    live: string;
-    repo: string;
+    live?: string;
+    repo?: string;
+    demo?: string;
   };
 }
 
@@ -22,11 +24,11 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
 
   return (
     <>
-      <div className='card card-compact overflow-hidden border-2 border-secondary bg-primary/50 dark:border-none dark:bg-glass'>
+      <div className='card-compact card overflow-hidden border-2 border-secondary bg-primary/50 dark:border-none dark:bg-glass'>
         <Image
           src={data.image}
-          height={500}
           width={800}
+          height={500}
           className='w-full'
           alt='project image'
         />
@@ -49,33 +51,16 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
             <Image
               src={data.image}
               alt='project image'
-              width={800}
-              height={500}
-              className='aspect-video rounded'
+              width={500}
+              height={300}
+              className='aspect-video rounded w-full'
             />
-            <div className='flex gap-5 p-6'>
-              <a
-                href={data.live}
-                target='_blank'
-                rel='noopener noreferrer'
-                className='btn bg-purple text-white hover:bg-pink active:bg-pink/50'
-              >
-                See live
-              </a>
-              <a
-                href={data.repo}
-                target='_blank'
-                rel='noopener noreferrer'
-                className='btn bg-purple text-white hover:bg-pink active:bg-pink/50'
-              >
-                Go to Repository
-              </a>
-            </div>
+            <ProjectButtons data={data} />
           </div>
           <div className='col-span-2 text-black dark:text-white'>
             <h2 className='text-2xl font-bold'>{data.name}</h2>
             <p className='px-3'>{data.paragraph}</p>
-            <ul className='flex h-fit justify-center gap-3 pl-3 pt-3'>
+            <ul className='flex h-fit justify-center gap-1 pl-3 pt-3 md:gap-3'>
               {data.techs.map((tech) => {
                 return (
                   <li
@@ -87,6 +72,12 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
                 );
               })}
             </ul>
+            {data.repo ? null : (
+              <p className='text-red text-balance px-3 py-3 text-sm font-thin'>
+                As this project is private, the source code is not available for
+                public viewing.
+              </p>
+            )}
           </div>
         </Modal>
       )}
