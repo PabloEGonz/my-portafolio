@@ -7,7 +7,6 @@ const projects = [
     image: '/events.jpg',
     techs: ['React', 'Next.js', 'TypeScript', 'Tailwind', 'Redux'],
     live: 'https://eventswebsite.vercel.app/',
-    repo: 'https://github.com/PabloEGonz/events-website-public',
   },
   {
     name: 'Bakery E-commerce Website',
