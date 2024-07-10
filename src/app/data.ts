@@ -1,12 +1,21 @@
 const projects = [
   {
-    name: 'Freelance - Static Website',
+    name: 'Freelance - Events Website',
     description:
       'As a freelance web developer, I was hired to create this static website for a company providing assistance for private events.',
     paragraph: `This static website showcases the services offered by a company that provides assistance for private events. The website includes a homepage, about page, services page, and contact page. It also features a responsive design, ensuring a seamless experience across various devices.`,
     image: '/events.jpg',
     techs: ['React', 'Next.js', 'TypeScript', 'Tailwind', 'Redux'],
-    live: 'https://eventswebsite.vercel.app/',
+    live: 'https://partyeventsbyaio.com/',
+  },
+  {
+    name: 'Freelance - Furniture Website',
+    description:
+      'As a freelance web developer, I was hired to create this static website for a company that sells wood furniture.',
+    paragraph: `This static website showcases the products offered by a company that sells wood furniture. The website includes a homepage, about page, and product pages. It also features a responsive design, ensuring a seamless experience across various devices.`,
+    image: '/furniture.png',
+    techs: ['React', 'Vite', 'TypeScript', 'Tailwind', 'CSS'],
+    live: 'https://cinco-estrellas.netlify.app/',
   },
   {
     name: 'Bakery E-commerce Website',
@@ -60,17 +69,6 @@ const projects = [
     techs: ['Vite', 'TypeScript', 'Bootstrap', 'SCCS'],
     live: 'https://knowyourchinesezodiacanimal.netlify.app/',
     repo: 'https://github.com/PabloEGonz/chineseZodiac',
-  },
-  {
-    name: 'Calculator Web App',
-    description:
-      'This is a calculator web application that uses an API to display quotes.',
-    paragraph:
-      'Math Magicians is a web app designed using React, the calculator offers a clean and intuitive interface. It supports basic arithmetic operations such as addition, subtraction, multiplication, and division, allowing users to perform calculations with ease. Additionally, the calculator incorporates responsive design principles, ensuring a seamless experience across various.',
-    image: '/calculator.png',
-    techs: ['React', 'JSX', 'Bootstrap', 'CSS3'],
-    live: 'https://pabloegonz.github.io/math-magicians/',
-    repo: 'https://github.com/PabloEGonz/math-magicians',
   },
   {
     name: 'December Countdown',
