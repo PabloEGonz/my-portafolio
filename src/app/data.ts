@@ -46,7 +46,7 @@ const projects = [
       "This user-friendly mobile web application takes the hassle out of budget management. By categorizing transactions, it provides a comprehensive view of your spending habits, empowering you to make more informed financial decisions. Whether you're tracking monthly expenses, managing personal spending, or planning for savings.",
     image: '/budget.png',
     techs: ['Ruby on Rails', 'ERB', 'CSS3', 'Bootstrap'],
-    live: 'https://budget-app-x025.onrender.com/',
+    demo: 'https://youtube.com/shorts/XtVQWQnDUzU',
     repo: 'https://github.com/PabloEGonz/bugget-app',
   },
   {

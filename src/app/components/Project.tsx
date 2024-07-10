@@ -53,7 +53,7 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
               alt='project image'
               width={500}
               height={300}
-              className='aspect-video rounded w-full'
+              className='aspect-video w-full rounded'
             />
             <ProjectButtons data={data} />
           </div>
@@ -73,9 +73,14 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
               })}
             </ul>
             {data.repo ? null : (
-              <p className='text-red text-balance px-3 py-3 text-sm font-thin'>
+              <p className='text-balance px-3 py-3 text-sm font-thin text-red'>
                 As this project is private, the source code is not available for
                 public viewing.
+              </p>
+            )}
+            {data.live ? null : (
+              <p className='text-balance px-3 py-3 text-sm font-thin text-red'>
+                This is a project that requires a DB so it is not live.
               </p>
             )}
           </div>
