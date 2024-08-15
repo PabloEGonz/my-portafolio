@@ -27,15 +27,6 @@ const Socials: NextPage<Props> = ({ direction }) => {
           <BsLinkedin />
         </a>
       </li>
-      <li className='m-4 text-3xl text-white hover:scale-110 hover:text-black'>
-        <a
-          href='https://wellfound.com/u/pabloezekielgonz'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <SiWellfound />
-        </a>
-      </li>
       <li className='m-4 text-2xl text-white hover:scale-110 hover:text-black'>
         <a href='mailto:ezekielgonzalezr@gmail.com'>
           <SiGmail />

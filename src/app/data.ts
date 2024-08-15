@@ -28,17 +28,6 @@ const projects = [
     repo: 'https://github.com/PabloEGonz/boulangerie-e-commerce',
   },
   {
-    name: 'Rent a Car Website',
-    description:
-      'This is a user-friendly web application for easy car rental, offering car listings, reservations, and management features.',
-    paragraph:
-      'This full-stack web application streamlines the process, allowing users to browse a curated list of available cars, access detailed car information, make reservations, add or remove car listings, and effortlessly manage reservations.',
-    image: '/rentCar.png',
-    techs: ['Ruby on Rails', 'React', 'Bootstrap', 'JSX'],
-    live: 'https://rent-a-car-front-end.onrender.com/',
-    repo: 'https://github.com/PabloEGonz/full-stack-capstone-front-end',
-  },
-  {
     name: 'Budget App',
     description:
       'This is a mobile web application where you can manage your budget.',
@@ -80,6 +69,16 @@ const projects = [
     techs: ['HTML', 'CSS3', 'JavaScript'],
     live: 'https://decembercountdown.netlify.app/',
     repo: 'https://github.com/PabloEGonz/decemberCountdown',
+  },
+  {
+    name: 'Rent a Car Website',
+    description:
+      'This is a user-friendly web application for easy car rental, offering car listings, reservations, and management features.',
+    paragraph:
+      'This full-stack web application streamlines the process, allowing users to browse a curated list of available cars, access detailed car information, make reservations, add or remove car listings, and effortlessly manage reservations.',
+    image: '/rentCar.png',
+    techs: ['Ruby on Rails', 'React', 'Bootstrap', 'JSX'],
+    repo: 'https://github.com/PabloEGonz/full-stack-capstone-front-end',
   },
 ];
 
