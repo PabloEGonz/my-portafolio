@@ -8,9 +8,9 @@ const NavList: NextPage<Props> = () => {
   const [isMounted, setMounted] = useState(false);
   const [hash, setHash] = useState('');
   const active =
-    'text-black dark:text-secondary font-semibold hover:font-semibold hover:text-secondary dark:hover:text-secondary';
+    'text-black font-semibold hover:font-semibold link-underline';
   const notActive =
-    'text-white hover:font-semibold hover:text-secondary dark:text-primary dark:hover:text-secondary';
+    'text-primary hover:font-semibold hover:text-black link-underline';
   useEffect(() => {
     if (isMounted) {
       setHash(window.location.hash);
@@ -24,7 +24,7 @@ const NavList: NextPage<Props> = () => {
   return (
     <ul className='hidden w-4/6  gap-12 lg:flex justify-end' onClick={() => setHash('set')}>
       <li className={hash == '#home' ? active : notActive}>
-        <a href='#home'>Home</a>
+        <a className="underline-animation" href='#home'>Home</a>
       </li>
       <li className={hash == '#projects' ? active : notActive}>
         <a href='#projects'>Projects</a>
