@@ -48,6 +48,7 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
             <div className='flex gap-5 p-6'>
               <a
                 href={data.live}
+                target='_blank'
                 className='btn bg-purple text-white hover:bg-pink active:bg-pink/50'
               >
                 See live
