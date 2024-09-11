@@ -14,16 +14,16 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-    },
-    colors: {
-      black: '#212529',
-      white: '#f8f9fa',
-      primary: '#343a40',
-      pink: '#E60576',
-      glass: '#fafafa35',
-      secondary: '#e9ecef',
-      purple: '#8258ff',
-      opacity: '#051622d0',
+      colors: {
+        black: '#212529',
+        white: '#f8f9fa',
+        primary: '#343a40',
+        pink: '#E60576',
+        glass: '#fafafa35',
+        secondary: '#e9ecef',
+        purple: '#8258ff',
+        opacity: '#051622d0',
+      },
     },
   },
   daisyui: {

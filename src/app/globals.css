@@ -8,20 +8,6 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-    --black: '#212529';
-    --white: '#f8f9fa';
-    --primary: '#343a40';
-    --orange: '#ff5733';
-    --secondary: '#DEB992';
-    --purple: '#8258ff';
-    --opacity: '#051622d0';
-  }
-} */
 
 .link-underline {
   border-bottom-width: 0;
@@ -35,4 +21,23 @@
 .link-underline:hover {
   background-size: 100% 2px;
   background-position: 0 100%
+}
+
+.animate-gradient {
+  background-size: 300%;
+  -webkit-animation: animatedgradient 6s ease infinite alternate;
+  -moz-animation: animatedgradient 6s ease infinite alternate;
+  animation: animatedgradient 6s ease infinite alternate;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
