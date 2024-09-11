@@ -11,7 +11,7 @@ const rubik = Rubik({
 });
 export default function Home() {
   return (
-    <main className='flex flex-col items-center justify-between dark:bg-black'>
+    <main className='flex flex-col items-center justify-between'>
       <section id='home' className='hero min-h-screen'>
         <div className='hero-content text-center'>
           <div className='max-w-md'>
@@ -21,7 +21,7 @@ export default function Home() {
             <h2 className='mb-6 bg-primary text-4xl text-secondary'>
               I&apos;m a full-stack software developer
             </h2>
-            <p className={rubik.className + ' py-6 font-sans text-lg font-light dark:text-secondary'}>
+            <p className={rubik.className + ' py-6 font-sans text-lg font-light'}>
               Certified Full-stack web developer with experience in
               collaborative environments, persistent in overcoming obstacles
               with a positive mindset. Constantly seeking new learning

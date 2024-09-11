@@ -16,12 +16,12 @@ const config: Config = {
       },
     },
     colors: {
-      black: '#001621',
-      white: '#fff',
-      primary: '#1a9e97',
+      black: '#212529',
+      white: '#f8f9fa',
+      primary: '#343a40',
       pink: '#E60576',
       glass: '#fafafa35',
-      secondary: '#DEB992',
+      secondary: '#e9ecef',
       purple: '#8258ff',
       opacity: '#051622d0',
     },
@@ -30,8 +30,8 @@ const config: Config = {
     themes: [
       {
         mytheme: {
-          primary: '#1a9e97',
-          secondary: '#DEB992',
+          primary: '#343a40',
+          secondary: '#e9ecef',
           accent: '#1dcdbc',
           neutral: '#2b3440',
           'base-100': '#ffffff',
