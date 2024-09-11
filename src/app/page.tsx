@@ -15,7 +15,7 @@ export default function Home() {
       <section id='home' className='hero min-h-screen'>
         <div className='hero-content text-center'>
           <div className='max-w-md'>
-            <h1 className='mb-5 pt-16 text-7xl text-primary bg-gradient-radial from-violet-600  via-indigo-600 via-sky-400 to-teal-500 text-transparent bg-clip-text animate-gradient'>
+            <h1 className='mb-5 pt-16 text-7xl text-primary bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))]  from-violet-600  via-indigo-600 via-sky-400 via-teal-500 to-pink text-transparent bg-clip-text animate-gradient duration-300'>
               Hey there I&apos;m Ezequiel
             </h1>
             <h2 className='mb-6 bg-primary text-4xl text-secondary'>

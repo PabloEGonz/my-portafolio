@@ -13,9 +13,9 @@ const Projects: NextPage<Props> = ({}) => {
       <div className='grid gap-10 lg:grid-cols-2'>
         {projects.map((project) => {
           return (
-            <Atropos key={project.name} activeOffset={40} shadowScale={1.05}>
-              <Project data={project} />
-            </Atropos>
+            // <Atropos key={project.name} activeOffset={40}>
+              <Project key={project.name}  data={project} />
+            // </Atropos>
           );
         })}
       </div>
