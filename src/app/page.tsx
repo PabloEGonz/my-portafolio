@@ -34,7 +34,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='left-0 hidden rounded  bg-purple lg:fixed lg:block'>
+        <div className='left-0 hidden rounded-e-lg  bg-purple lg:fixed lg:block z-10'>
           <Socials direction='col' />
         </div>
       </section>
