@@ -22,7 +22,7 @@ const NavList: NextPage<Props> = () => {
   if (!isMounted) return;
 
   return (
-    <ul className='hidden w-4/6  gap-12 lg:flex justify-end' onClick={() => setHash('set')}>
+    <ul className='hidden gap-12 lg:flex justify-end' onClick={() => setHash('set')}>
       <li className={hash == '#home' ? active : notActive}>
         <a className="underline-animation" href='#home'>Home</a>
       </li>

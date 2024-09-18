@@ -25,7 +25,7 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
   return (
     <>
       <div className='card-compact card border-2 border-secondary bg-white/30 backdrop-blur-md'>
-        <figure>{<Image src={data.image} alt='project image' />}</figure>
+        <figure>{<Image src={data.image} width={200} height={200} alt='project image' />}</figure>
         <div className='card-body text-black'>
           <h2 className='card-title'>{data.name}</h2>
           <p>{data.description}</p>
@@ -45,6 +45,8 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
             <Image
               src={data.image}
               alt='project image'
+              width={200}
+              height={200}
               className='aspect-video rounded'
             />
             <div className='flex gap-5 p-6'>
