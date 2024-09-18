@@ -12,7 +12,7 @@ const ProjectButtons: React.FC<ProjectProps> = ({ data }) => {
           href={data.demo}
           target='_blank'
           rel='noopener noreferrer'
-          className='btn bg-purple text-white text-2xl hover:bg-pink active:bg-pink/50'
+          className='rounded-lg bg-black p-2 text-2xl text-white transition-transform duration-300 hover:scale-110 active:bg-black/60'
         >
           <MdPhonelink />
         </a>
@@ -22,7 +22,7 @@ const ProjectButtons: React.FC<ProjectProps> = ({ data }) => {
           href={data.live}
           target='_blank'
           rel='noopener noreferrer'
-          className='btn bg-purple text-white text-2xl hover:bg-pink active:bg-pink/50'
+          className='rounded-lg bg-black p-2 text-2xl text-white transition-transform duration-300 hover:scale-110 active:bg-black/60'
         >
           <FiExternalLink />
         </a>
@@ -32,7 +32,7 @@ const ProjectButtons: React.FC<ProjectProps> = ({ data }) => {
           href={data.repo}
           target='_blank'
           rel='noopener noreferrer'
-          className='btn bg-purple text-white text-2xl hover:bg-pink active:bg-pink/50'
+          className='rounded-lg bg-black p-2 text-2xl text-white transition-transform duration-300 hover:scale-110 active:bg-black/60'
         >
           <FaGithub />
         </a>
