@@ -24,7 +24,7 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
 
   return (
     <>
-      <div className='card-compact card border-2 border-secondary bg-white/30 backdrop-blur-md'>
+      <div className='card-compact overflow-hidden card border-2 border-secondary bg-white/30 backdrop-blur-md'>
         <Image
           src={data.image}
           width={800}
