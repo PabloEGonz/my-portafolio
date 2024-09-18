@@ -14,7 +14,9 @@ const About: NextPage<Props> = ({}) => {
         out to me. I&apos;m here to help bring your ideas to life!
       </p>
       <a
-        href='https://docs.google.com/document/d/1vDG_LiYK4fE7tvUjZlCVZRz3X1YyGbd6hbugheDhOWs/edit'
+        href='https://docs.google.com/document/d/1Cpk3OEmpYx1Nr-jeeX3SgfUsKTtd4yF1QG6iElh7b2I/edit?usp=sharing'
+        target='_blank'
+        rel='noopener noreferrer'
         className='btn bg-purple text-white hover:bg-pink'
       >
         Get my resume

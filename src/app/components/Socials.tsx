@@ -8,20 +8,23 @@ interface Props {
 
 const Socials: NextPage<Props> = ({ direction }) => {
   return (
-    <ul className={`flex flex-${direction} p-2 justify-center`}>
+    <ul className={`flex flex-${direction} justify-center p-2`}>
       <li className='m-4 text-2xl text-white hover:scale-110 hover:text-black'>
-        <a href='https://github.com/PabloEGonz'>
+        <a
+          href='https://github.com/PabloEGonz'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           <BsGithub />
         </a>
       </li>
       <li className='m-4 text-2xl text-white hover:scale-110 hover:text-black'>
-        <a href='https://www.linkedin.com/in/pabloezekielgonz/'>
+        <a
+          href='https://www.linkedin.com/in/pabloezekielgonz/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           <BsLinkedin />
-        </a>
-      </li>
-      <li className='m-4 text-3xl text-white hover:scale-110 hover:text-black'>
-        <a href='https://wellfound.com/u/pabloezekielgonz'>
-          <SiWellfound />
         </a>
       </li>
       <li className='m-4 text-2xl text-white hover:scale-110 hover:text-black'>

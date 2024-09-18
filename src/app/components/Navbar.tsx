@@ -9,7 +9,7 @@ const Navbar: NextPage<Props> = ({}) => {
   return (
     <nav className='navbar fixed inset-x-0  left-0 top-0 z-10 justify-center bg- p-6'>
       <div className='navbar-start lg:hidden'>
-        <div className='dropdown '>
+        <div className='dropdown'>
           <label tabIndex={0} className='btn btn-circle btn-ghost text-white'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -44,6 +44,7 @@ const Navbar: NextPage<Props> = ({}) => {
           </ul>
         </div>
       </div>
+      <div className='mx-auto'>
         <NavList />
       <div className='ml-auto'>
       <ThemeSwitch />
