@@ -25,7 +25,13 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
   return (
     <>
       <div className='card-compact card border-2 border-secondary bg-white/30 backdrop-blur-md'>
-        <figure>{<Image src={data.image} width={200} height={200} alt='project image' />}</figure>
+        <Image
+          src={data.image}
+          width={800}
+          height={500}
+          className='w-full'
+          alt='project image'
+        />
         <div className='card-body text-black'>
           <h2 className='card-title'>{data.name}</h2>
           <p>{data.description}</p>
@@ -45,24 +51,11 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
             <Image
               src={data.image}
               alt='project image'
-              width={200}
-              height={200}
-              className='aspect-video rounded'
+              width={800}
+              height={500}
+              className='aspect-video w-full rounded'
             />
-            <div className='flex gap-5 p-6'>
-              <a
-                href={data.live}
-                className='btn bg-purple text-white hover:bg-pink active:bg-pink/50'
-              >
-                See live
-              </a>
-              <a
-                href={data.repo}
-                className='btn bg-purple text-white hover:bg-pink active:bg-pink/50'
-              >
-                Go to Repository
-              </a>
-            </div>
+            <ProjectButtons data={data} />
           </div>
           <div className='col-span-2 text-black'>
             <h2 className='text-2xl font-bold'>{data.name}</h2>
@@ -80,13 +73,13 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
               })}
             </ul>
             {data.repo ? null : (
-              <p className='text-balance px-3 py-3 text-sm font-thin text-red'>
+              <p className='text-balance text-red px-3 py-3 text-sm font-thin'>
                 As this project is private, the source code is not available for
                 public viewing.
               </p>
             )}
             {data.live ? null : (
-              <p className='text-balance px-3 py-3 text-sm font-thin text-red'>
+              <p className='text-balance text-red px-3 py-3 text-sm font-thin'>
                 This is a project that requires a DB so it is not live.
               </p>
             )}
