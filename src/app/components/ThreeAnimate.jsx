@@ -28,12 +28,12 @@ const Geometries = () => {
 
     const geometries = [
         {
-            position: [5, 0, 0],
+            position: [4, 0, 0],
             r: 0.3,
             geometry: new THREE.IcosahedronGeometry(3),
         },
         {
-            position: [-5, 0, 0],
+            position: [-4, 0, 0],
             r: 0.2,
             geometry: new THREE.DodecahedronGeometry( 3, 0),
         },

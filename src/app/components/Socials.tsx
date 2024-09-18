@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
-import { SiWellfound, SiGmail } from 'react-icons/si';
+import { SiGmail } from 'react-icons/si';
 
 interface Props {
   direction: String;

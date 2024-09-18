@@ -8,9 +8,9 @@ interface Props {}
 const Navbar: NextPage<Props> = ({}) => {
   return (
     <nav className='bg- navbar fixed  inset-x-0 left-0 top-0 z-10 justify-center p-6'>
-      <div className='navbar-start lg:hidden'>
+      <div className='navbar-start lg:hidden w-full'>
         <div className='dropdown'>
-          <label tabIndex={0} className='btn btn-circle btn-ghost text-white'>
+          <label tabIndex={0} className='btn btn-circle btn-ghost text-black'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               fill='none'
@@ -27,18 +27,18 @@ const Navbar: NextPage<Props> = ({}) => {
           </label>
           <ul
             tabIndex={0}
-            className='menu dropdown-content rounded-box z-[1] mt-3 w-52 bg-black p-2 shadow'
+            className='menu dropdown-content rounded-box z-[1] mt-3 w-52 bg-white/30 backdrop-blur-lg p-2 shadow'
           >
-            <li className='text-primary hover:font-semibold hover:text-black'>
+            <li className='text-black text-lg hover:font-semibold'>
               <a href='#home'>Home</a>
             </li>
-            <li className='text-primary hover:font-semibold hover:text-black'>
+            <li className='text-black text-lg hover:font-semibold'>
               <a href='#projects'>Projects</a>
             </li>
-            <li className='text-primary hover:font-semibold hover:text-black'>
+            <li className='text-black text-lg hover:font-semibold'>
               <a href='#about'>About</a>
             </li>
-            <li className='text-primary hover:font-semibold hover:text-black'>
+            <li className='text-black text-lg hover:font-semibold'>
               <a href='#contact'>Contact</a>
             </li>
           </ul>
