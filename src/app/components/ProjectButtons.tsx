@@ -1,15 +1,22 @@
 import React from 'react';
-import { ProjectProps } from './Project';
 import { FaGithub } from 'react-icons/fa';
 import { FiExternalLink } from 'react-icons/fi';
 import { MdPhonelink } from 'react-icons/md';
 
-const ProjectButtons: React.FC<ProjectProps> = ({ data }) => {
+const ProjectButtons = ({
+  demo,
+  live,
+  repo,
+}: {
+  demo?: string;
+  live?: string;
+  repo?: string;
+}) => {
   return (
-    <div className='flex gap-5 p-6'>
-      {data.demo && (
+    <div className='flex gap-5 lg:p-6'>
+      {demo && (
         <a
-          href={data.demo}
+          href={demo}
           target='_blank'
           rel='noopener noreferrer'
           className='rounded-lg bg-black p-2 text-2xl text-white transition-transform duration-300 hover:scale-110 active:bg-black/60'
@@ -17,9 +24,9 @@ const ProjectButtons: React.FC<ProjectProps> = ({ data }) => {
           <MdPhonelink />
         </a>
       )}
-      {data.live && (
+      {live && (
         <a
-          href={data.live}
+          href={live}
           target='_blank'
           rel='noopener noreferrer'
           className='rounded-lg bg-black p-2 text-2xl text-white transition-transform duration-300 hover:scale-110 active:bg-black/60'
@@ -27,9 +34,9 @@ const ProjectButtons: React.FC<ProjectProps> = ({ data }) => {
           <FiExternalLink />
         </a>
       )}
-      {data.repo && (
+      {repo && (
         <a
-          href={data.repo}
+          href={repo}
           target='_blank'
           rel='noopener noreferrer'
           className='rounded-lg bg-black p-2 text-2xl text-white transition-transform duration-300 hover:scale-110 active:bg-black/60'
