@@ -1,10 +1,9 @@
-import About from './components/About';
-import Contact from './components/Contact';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Socials from './components/Socials';
+import About from '../components/About';
+import Contact from '../components/Contact';
+import Skills from '../components/Skills';
 import { Rubik } from 'next/font/google';
-import ThreeAnimate from './components/ThreeAnimate';
+import ThreeAnimate from '../components/ThreeAnimate';
+import Timeline from '../components/projects/Timeline';
 
 const rubik = Rubik({
   weight: ['300', '400', '500', '600', '700', '800', '900'],
@@ -22,11 +21,14 @@ export default function Home() {
             <h1 className='animate-gradient mb-5 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-violet-600 via-indigo-600  via-sky-400  via-teal-500 to-pink bg-clip-text pt-16 text-7xl text-primary text-transparent duration-300'>
               Hey there I&apos;m Ezequiel
             </h1>
-            <h2 className='mb-6 bg-white/30 backdrop-blur-md text-4xl text-black p-3 rounded-lg'>
+            <h2 className='mb-6 rounded-lg bg-white/30 p-3 text-4xl text-black backdrop-blur-md'>
               I&apos;m a full-stack software developer
             </h2>
             <p
-              className={rubik.className + ' py-6 font-sans text-lg font-light bg-white/50 backdrop-blur-md rounded-lg'}
+              className={
+                rubik.className +
+                ' rounded-lg bg-white/50 py-6 font-sans text-lg font-light backdrop-blur-md'
+              }
             >
               Certified Full-stack web developer with experience in
               collaborative environments, persistent in overcoming obstacles
@@ -36,15 +38,13 @@ export default function Home() {
               Rails, React, and Next.js.
             </p>
             <div className='rounded bg-purple lg:hidden'>
-              <Socials direction='row' />
             </div>
           </div>
         </div>
         <div className='left-0 z-10 hidden  rounded-e-lg bg-purple lg:fixed lg:block'>
-          <Socials direction='col' />
         </div>
       </section>
-      <Projects />
+      <Timeline />
       <About />
       <Skills />
       <Contact />

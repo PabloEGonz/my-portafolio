@@ -3,7 +3,7 @@ import { useScroll, useTransform, motion } from 'framer-motion';
 import React, { useEffect, useRef, useState } from 'react';
 import { Project } from './Project';
 import ProjectButtons from './ProjectButtons';
-import projects from '../../data';
+import projects from './data';
 
 
 
