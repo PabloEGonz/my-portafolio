@@ -1,46 +1,11 @@
 'use client';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import React, { useEffect, useRef, useState } from 'react';
-import { Project } from './projects/Project';
-// import { sectionHeading } from "../projects/data";
-// import { Button } from './button';
-// import { LinkPreview } from "./link-preview";
-// import { Project } from "../projects/ui/project";
-import Link from 'next/link';
-// import { SectionHeading } from "./section-heading";
+import { Project } from './Project';
 import ProjectButtons from './ProjectButtons';
-import projects from '../data';
-type ProjectUrl = {
-  url: string;
-  icon: JSX.Element;
-};
+import projects from '../../data';
 
-type Card = {
-  title: string;
-  text: string;
-};
 
-export type ProjectProps = {
-  name: string;
-  description: string;
-  image: string;
-  techs: string[];
-  live?: string;
-  repo?: string;
-  demo?: string;
-  cards: { a: Card; b: Card };
-};
-
-export type TimelineEntry = {
-  name: string;
-  description: string;
-  techs: string[];
-  cards: { a: Card; b: Card };
-  image?: string;
-  live?: string;
-  repo?: string;
-  demo?: string;
-};
 
 const Timeline = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -65,7 +30,7 @@ const Timeline = () => {
   return (
     <div className='w-full font-sans' ref={containerRef}>
       <div className='flex flex-col items-center justify-center gap-2 md:flex-row md:items-baseline md:gap-5'>
-        <h2 className='gradient-text text-24-40 text-center font-extrabold'>
+        <h2 className='text-3xl md:text-5xl text-center font-extrabold'>
           My Recent Projects
         </h2>
         <p className='text-muted-foreground text-center text-lg font-light'>
