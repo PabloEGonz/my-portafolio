@@ -6,7 +6,16 @@ const projects = [
     description:
       'I built a static website for a company offering private event assistance. It includes a homepage, about, services, and contact pages, all designed with responsiveness for optimal viewing on any device.',
     image: '/events.jpg',
-    techs: ['React', 'Next.js', 'TypeScript', 'Tailwind', 'Redux'],
+    techs: [
+      'React',
+      'Next.js',
+      'TypeScript',
+      'Tailwind',
+      'Redux',
+      'Framer Motion',
+      'Flowbite',
+      'Daisy UI',
+    ],
     live: 'https://partyeventsbyaio.com/',
     cards: {
       a: {
@@ -24,7 +33,7 @@ const projects = [
     description:
       " I created a modern static website for a wood furniture company. It features a homepage, about page, and product pages, showcasing the company's offerings with a sleek, contemporary design.",
     image: '/furniture.png',
-    techs: ['React', 'Vite', 'TypeScript', 'Tailwind', 'CSS'],
+    techs: ['React', 'Vite', 'TypeScript', 'Tailwind', 'CSS', 'React Router'],
     live: 'https://cinco-estrellas.netlify.app/',
     cards: {
       a: {
@@ -49,6 +58,7 @@ const projects = [
       'Tailwind',
       'CSS',
       'JavaScript',
+      'Devise',
     ],
     repo: 'https://github.com/PabloEGonz/boulangerie-e-commerce',
     cards: {
@@ -72,6 +82,7 @@ const projects = [
       'PostgreSQL',
       'RSpec',
       'Capybara',
+      'Selenium',
       'Ruby',
       'CSS3',
       'Bootstrap',
@@ -94,7 +105,15 @@ const projects = [
     description:
       'This web app allows you to monitor air quality across various cities. You can view air quality data, add or remove cities, and learn about the parameters used to assess air quality.',
     image: '/airQuality.png',
-    techs: ['React', 'Redux', 'Axios', 'Bootstrap', 'CSS3'],
+    techs: [
+      'React',
+      'Redux',
+      'React Router',
+      'Axios',
+      'Bootstrap',
+      'CSS3',
+      'Jest',
+    ],
     live: 'https://cities-air-quality-pg.netlify.app/',
     repo: 'https://github.com/PabloEGonz/air-quality-app',
     cards: {
@@ -113,7 +132,7 @@ const projects = [
     description:
       'This is a webpage that tells you what Chinese zodiac sign you are, you have to enter your date of birth and it will show your zodiac animal.',
     image: '/chineseZodiac.png',
-    techs: ['Vite', 'TypeScript', 'Bootstrap', 'SCCS', 'Redux'],
+    techs: ['Vite', 'TypeScript', 'Bootstrap', 'SCCS', 'Redux', 'React Router'],
     live: 'https://knowyourchinesezodiacanimal.netlify.app/',
     repo: 'https://github.com/PabloEGonz/chineseZodiac',
     cards: {
