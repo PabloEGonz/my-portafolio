@@ -16,6 +16,7 @@ const config: Config = {
       },
       colors: {
         black: '#212529',
+        'text-white': '#fff',
         white: '#f8f9fa',
         primary: '#343a40',
         pink: '#E60576',
