@@ -28,7 +28,7 @@ const Timeline = () => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div className='w-full font-sans' ref={containerRef}>
+    <div id='projects' className='w-full' ref={containerRef}>
       <div className='flex flex-col items-center justify-center gap-2 md:flex-row md:items-baseline md:gap-5'>
         <h2 className='text-3xl md:text-5xl text-center font-extrabold'>
           My Recent Projects
@@ -37,7 +37,7 @@ const Timeline = () => {
           See what I've been working on lately
         </p>
       </div>
-      <div ref={ref} className='relative mx-auto max-w-7xl pb-20'>
+      <div ref={ref} className='relative mx-auto max-w-7xl pb-20 overflow-hidden'>
         {projects.map((project, index) => (
           <div
             key={index}
@@ -75,14 +75,14 @@ const Timeline = () => {
           style={{
             height: height + 'px',
           }}
-          className='absolute left-8 top-0 w-[2px] overflow-hidden bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-400 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] dark:via-neutral-700 md:left-8'
+          className='absolute left-8 top-0 w-[3px] overflow-hidden bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-400 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] dark:via-neutral-700 md:left-8'
         >
           <motion.div
             style={{
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className='from-purple-500 absolute inset-x-0 top-0 w-[2px] rounded-full bg-gradient-to-t from-[0%] via-blue-500 via-[10%] to-transparent'
+            className='from-purple-500 absolute inset-x-0 top-0 w-[3px] rounded-full bg-gradient-to-t from-[0%] via-blue-500 via-[10%] to-transparent'
           />
         </div>
       </div>
