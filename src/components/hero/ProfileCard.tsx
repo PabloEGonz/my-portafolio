@@ -11,6 +11,12 @@ import {
 import Link from 'next/link';
 import { AnimatedTooltip } from './AnimatedTooltip';
 import { BackgroundGradient } from '../Background';
+import { Rubik } from 'next/font/google';
+
+const rubik = Rubik({
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  subsets: ['latin'],
+});
 
 function ProfileCard() {
   return (
@@ -22,16 +28,16 @@ function ProfileCard() {
               translateZ='100'
               className='flex w-full gap-5 rounded-xl transition-all group-hover/card:shadow-lg'
             >
-              <Card className='w-full bg-white/60 shadow-[-2px_-1px_#ffffff16_inset] backdrop-blur-xl transition-all group-hover/card:shadow-[-1px_-1px_#ffffff16_inset] group-hover/card:drop-shadow-[5px_10px_10px_#17343e1c]'>
+              <Card className='w-full bg-white/50 shadow-[-2px_-1px_#ffffff16_inset] backdrop-blur-2xl transition-all group-hover/card:shadow-[-1px_-1px_#ffffff16_inset] group-hover/card:drop-shadow-[5px_10px_10px_#17343e1c]'>
                 <CardHeader className='flex-row items-center gap-10 border-b border-secondary p-4'>
                   <AnimatedTooltip />
                   <div className='flex flex-col'>
                     <CardTitle>Ezequiel G</CardTitle>
-                    <CardDescription>Full Stack Developer</CardDescription>
+                    <CardDescription>Full-Stack Developer</CardDescription>
                   </div>
                 </CardHeader>
                 <CardContent className='p-4'>
-                  <p>
+                  <p className={rubik.className + ' font-light text-lg'}>
                     Experienced in collaborative environments, persistent in
                     overcoming obstacles with a positive mindset I demonstre a
                     strong determination.

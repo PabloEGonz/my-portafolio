@@ -1,12 +1,7 @@
 import ThreeAnimate from '../ThreeAnimate';
-import { Rubik } from 'next/font/google';
 import ProfileCard from './ProfileCard';
 import ProfileCardMobile from './ProfileCardMobile';
 
-const rubik = Rubik({
-  weight: ['300', '400', '500', '600', '700', '800', '900'],
-  subsets: ['latin'],
-});
 
 const Hero = () => {
   return (
