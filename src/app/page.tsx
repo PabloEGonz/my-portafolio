@@ -1,6 +1,6 @@
 import About from '../components/About';
 import Contact from '../components/Contact';
-import Skills from '../components/Skills';
+import Skills from '../components/skills/Skills';
 import Timeline from '../components/projects/Timeline';
 import Hero from '@/components/hero/Hero';
 
