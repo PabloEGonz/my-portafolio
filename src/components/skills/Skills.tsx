@@ -4,11 +4,8 @@ import Item from './Item';
 
 interface Props {}
 
-const languages = ['JavaScript', 'TypeScript', 'Ruby', 'CSS & SASS'];
-const frameworks = ['React', 'Next.js', 'Ruby on Rails'];
-
 const frontEnd = ['React', 'Next.js', 'Vite', 'HTML', 'CSS', 'SASS'];
-const backEnd = ['Ruby on Rails', 'PostgreSQL', 'Ruby', 'MongoDB'];
+const backEnd = ['Ruby on Rails', 'PostgreSQL', 'Ruby', 'MongoDB', 'Node.js'];
 const libraries = ['Axios', 'Redux Toolkit', 'Tailwind CSS', 'Bootstrap', 'Three.js', 'Framer Motion'];
 const testing = ['Capybara', 'Selenium', 'RSpec', 'Jest'];
 const tools = [

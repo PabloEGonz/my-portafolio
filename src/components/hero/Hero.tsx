@@ -2,7 +2,6 @@ import ThreeAnimate from '../ThreeAnimate';
 import ProfileCard from './ProfileCard';
 import ProfileCardMobile from './ProfileCardMobile';
 
-
 const Hero = () => {
   return (
     <section id='home' className='hero min-h-screen overflow-hidden'>
