@@ -5,8 +5,6 @@ import { Project } from './Project';
 import ProjectButtons from './ProjectButtons';
 import projects from './data';
 
-
-
 const Timeline = () => {
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -30,14 +28,17 @@ const Timeline = () => {
   return (
     <div id='projects' className='w-full' ref={containerRef}>
       <div className='flex flex-col items-center justify-center gap-2 md:flex-row md:items-baseline md:gap-5'>
-        <h2 className='text-3xl md:text-5xl text-center font-extrabold'>
+        <h2 className='text-center text-3xl font-extrabold md:text-5xl'>
           My Recent Projects
         </h2>
         <p className='text-muted-foreground text-center text-lg font-light'>
-          See what I've been working on lately
+          See what I&apos;ve been working on lately
         </p>
       </div>
-      <div ref={ref} className='relative mx-auto max-w-7xl pb-20 overflow-hidden'>
+      <div
+        ref={ref}
+        className='relative mx-auto max-w-7xl overflow-hidden pb-20'
+      >
         {projects.map((project, index) => (
           <div
             key={index}
@@ -55,7 +56,11 @@ const Timeline = () => {
               >
                 {project.name}
                 <div className='flex w-full gap-5'>
-                  <ProjectButtons repo={project.repo} live={project.live} demo={project.demo} />
+                  <ProjectButtons
+                    repo={project.repo}
+                    live={project.live}
+                    demo={project.demo}
+                  />
                 </div>
               </motion.h3>
             </div>
@@ -64,7 +69,11 @@ const Timeline = () => {
               <h3 className='mb-4 block space-y-4 text-left text-2xl font-bold md:hidden'>
                 <span>{project.name}</span>
                 <div className='flex w-full'>
-                  <ProjectButtons repo={project.repo} live={project.live} demo={project.demo} />
+                  <ProjectButtons
+                    repo={project.repo}
+                    live={project.live}
+                    demo={project.demo}
+                  />
                 </div>
               </h3>
               <Project {...project} />
