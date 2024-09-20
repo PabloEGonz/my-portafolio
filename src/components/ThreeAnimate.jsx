@@ -63,7 +63,7 @@ const Geometries = () => {
          r={r} 
          geometry={geometry} 
          materials={materials} 
-         hovered={hovered}
+         hovered={hovered}      
          updateHover={updateHover}
         />
 )
@@ -73,7 +73,6 @@ const Geometries = () => {
 const Geometry = ({ geometry, materials, position, r, hovered, updateHover }) => {
     const meshRef = useRef();
     const [visible, setVisible] = useState(false);
-    // const [hovered, setHovered] = useState(false);
 
     const startingMaterial = getRandomMaterial();
 
