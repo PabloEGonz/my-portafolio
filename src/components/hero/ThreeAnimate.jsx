@@ -11,7 +11,6 @@ export default function ThreeAnimate() {
             <Suspense fallback={null}>
                 <Geometries />
             <Environment preset='warehouse' />
-            <ContactShadows position={[0, -4.5, 0]} opacity={0.54} scale={40} blur={1} far={9} />
             </Suspense>
         </Canvas>
     )
@@ -28,20 +27,20 @@ const Geometries = () => {
 
     const geometries = [
         {
-            position: [4, 0, 0],
-            r: 0.3,
-            geometry: new THREE.IcosahedronGeometry(3),
+            position: [-4.5, 0, 0],
+            r: 0.4,
+            geometry: new THREE.DodecahedronGeometry( 3.9, 0),
         },
         {
-            position: [-4, 0, 0],
-            r: 0.2,
-            geometry: new THREE.DodecahedronGeometry( 3, 0),
-        },
-        {
-            position: [0, -0.9, 0],
+            position: [0, -0.7, 0],
             r: 0.5,
-            geometry: new THREE.TorusKnotGeometry( 2, 0.4, 80, 16 ),
-        }
+            geometry: new THREE.TorusKnotGeometry( 2.5, 1.3, 90, 19 ),
+        },
+        {
+            position: [4.5, 0, 0],
+            r: 0.4,
+            geometry: new THREE.IcosahedronGeometry(4),
+        },
     ]
 
     const materials = [
@@ -119,9 +118,9 @@ const Geometry = ({ geometry, materials, position, r, hovered, updateHover }) =>
 
         useFrame(() => {
             if (meshRef.current && !hovered) {
-              meshRef.current.rotation.y -= 0.03; // Rotate upwards
+              meshRef.current.rotation.x -= 0.03; // Rotate upwards
             }else {
-                meshRef.current.rotation.x += 0.02; // Rotate sideways
+                meshRef.current.rotation.y += 0.02; // Rotate sideways
             }
 
           });
@@ -134,7 +133,9 @@ const Geometry = ({ geometry, materials, position, r, hovered, updateHover }) =>
              onPointerOver={handlePointerOver} 
              onPointerOut={handlePointerOut} 
              material={startingMaterial} 
-             visible={visible} />
+             visible={visible} 
+             castShadow={true}
+             />
             </Float>
         </group>
     )
