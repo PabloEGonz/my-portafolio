@@ -1,4 +1,4 @@
-import ThreeAnimate from '../ThreeAnimate';
+import ThreeAnimate from './ThreeAnimate';
 import ProfileCard from './ProfileCard';
 import ProfileCardMobile from './ProfileCardMobile';
 

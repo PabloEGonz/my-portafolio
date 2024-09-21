@@ -1,6 +1,6 @@
 import { BackgroundGradient } from '../Background';
 import Image from 'next/image';
-import { WobbleCard } from '../WoobleCard';
+import { WobbleCard } from './WoobleCard';
 import { usePalette } from 'color-thief-react';
 import {
   Accordion,
@@ -8,7 +8,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from './Accordion';
-
 
 type Card = {
   title: string;
@@ -23,7 +22,7 @@ export type ProjectProps = {
   repo?: string;
   demo?: string;
   cards: { a: Card; b: Card };
-};  
+};
 
 export function Project({
   techs,
@@ -35,7 +34,7 @@ export function Project({
   const { data } = usePalette(image ?? '', 8, 'hex');
   return (
     <div>
-      <p className='text-muted-foreground text-lg mb-8 font-light'>
+      <p className='text-muted-foreground mb-8 text-lg font-light'>
         {description}
       </p>
       <div className='mb-8'>

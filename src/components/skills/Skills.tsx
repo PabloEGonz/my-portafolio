@@ -1,4 +1,4 @@
-import BackgroundGradient from '../BackgroundGradient';
+import BackgroundGradient from './BackgroundGradient';
 import { NextPage } from 'next';
 import Item from './Item';
 
