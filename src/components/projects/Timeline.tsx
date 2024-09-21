@@ -26,12 +26,12 @@ const Timeline = () => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div id='projects' className='w-full' ref={containerRef}>
+    <div id='projects' className='w-full pt-10 md:pt-20' ref={containerRef}>
       <div className='flex flex-col items-center justify-center gap-2 md:flex-row md:items-baseline md:gap-5'>
         <h2 className='text-center text-3xl font-extrabold md:text-5xl'>
           My Recent Projects
         </h2>
-        <p className='text-muted-foreground text-center text-lg font-light'>
+        <p className='text-muted-foreground text-center text-2xl font-light'>
           See what I&apos;ve been working on lately
         </p>
       </div>
@@ -42,7 +42,7 @@ const Timeline = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className='flex justify-start pt-10 md:gap-10 md:pt-20'
+            className='flex justify-start pt-5 md:gap-10 md:pt-10'
           >
             <div className='sticky top-40 z-40 flex max-w-xs flex-col items-center self-start md:w-full md:flex-row lg:max-w-sm'>
               <div className='absolute left-3 flex h-10 w-10 items-center justify-center rounded-full bg-black md:left-3'>
