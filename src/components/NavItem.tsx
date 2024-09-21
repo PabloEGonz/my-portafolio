@@ -29,9 +29,6 @@ const NavList: NextPage<Props> = () => {
       <li className={hash == '#projects' ? active : notActive}>
         <a href='#projects'>Projects</a>
       </li>
-      <li className={hash == '#about' ? active : notActive}>
-        <a href='#about'>About</a>
-      </li>
       <li className={hash == '#contact' ? active : notActive}>
         <a href='#contact'>Contact</a>
       </li>
