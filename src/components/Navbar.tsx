@@ -1,28 +1,17 @@
 'use client';
 import NavList from './NavItem';
-import { useScroll } from './NavbarHelper';
+// import { useScroll } from './NavbarHelper';
+// import { Navbar as Nav } from '@nextui-org/navbar'
 
-const styles = {
-  active: {
-    visibility: 'visible',
-    transition: 'all 0.5s',
-  },
-  hidden: {
-    visibility: 'hidden',
-    transition: 'all 0.5s',
-    transform: 'translateY(-100%)',
-  },
-};
 
-const visible =
-  'navbar fixed inset-x-0 left-0 top-0 z-30 justify-center p-6 lg:bg-white/50 lg:backdrop-blur-3xl transition-all duration-500 ease-in-out visible';
+const visible =' transition-all duration-500 ease-in-out visible';
 const hidden =
   'translate-y-[-100%] transition-all duration-500 ease-in-out invisible';
 const Navbar = ({}) => {
-  const { scrollDirection } = useScroll();
+  // const { scrollDirection } = useScroll();
 
   return (
-    <nav className={scrollDirection === 'down' ? visible : hidden}>
+    <nav className='navbar fixed inset-x-0 left-0 top-0 z-30 justify-center p-6 lg:bg-white/50 lg:backdrop-blur-3xl'>
       <div className='navbar-start w-full lg:hidden'>
         <div className='dropdown'>
           <label

@@ -1,31 +1,32 @@
 import { useState, useEffect } from "react";
 
 export function useScroll() {
-   // storing this to get the scroll direction
+  // storing this to get the scroll direction
   const [lastScrollTop, setLastScrollTop] = useState(0);
-   // the offset of the document.body
-  const [bodyOffset, setBodyOffset] = useState(
-    document.body.getBoundingClientRect()
-  );
-   // the vertical direction
-  const [scrollY, setScrollY] = useState(bodyOffset.top);
-;
-   // scroll direction would be either up or down
+  // the vertical direction
+  const [scrollY, setScrollY] = useState(0);
+  // scroll direction would be either up or down
   const [scrollDirection, setScrollDirection] = useState();
 
-  const listener = e => {
-    setBodyOffset(document.body.getBoundingClientRect());
-    setScrollY(-bodyOffset.top);
-    setScrollDirection(lastScrollTop > -bodyOffset.top ? "down" : "up");
-    setLastScrollTop(-bodyOffset.top);
+  const listener = () => {
+    const bodyOffset = document.body.getBoundingClientRect();
+    const scrollTop = -bodyOffset.top;
+    setScrollY(scrollTop);
+    setScrollDirection(lastScrollTop > scrollTop ? "up" : "down");
+    setLastScrollTop(scrollTop);
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", listener);
-    return () => {
-      window.removeEventListener("scroll", listener);
-    };
-  });
+    if (typeof window !== "undefined") {
+      // Add the scroll listener only on the client side
+      window.addEventListener("scroll", listener);
+      
+      // Cleanup the event listener on component unmount
+      return () => {
+        window.removeEventListener("scroll", listener);
+      };
+    }
+  }, [lastScrollTop]); // dependency array to avoid redundant calls
 
   return {
     scrollY,
