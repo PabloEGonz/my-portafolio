@@ -42,7 +42,7 @@ const Contact: NextPage<Props> = ({}) => {
             placeholder='Write me Something'
             className='textarea textarea-bordered'
           ></textarea>
-          <div className='flex justify-between'>
+          <div className='flex flex-wrap justify-between'>
             <button
               type='submit'
               className='btn bg-black text-white hover:bg-black/10'
