@@ -64,7 +64,7 @@ const projects = [
     cards: {
       a: {
         title: 'Backend & Database',
-        text: 'I used Ruby on Rails and PostgreSQL to build the backend for this e-commerce site. I implemented Devise for secure user authentication and optimized the database schema to manage products and transactions.',
+        text: 'I used Ruby on Rails and PostgreSQL for the backend for this e-commerce. I integrated Devise for a secure user authentication.',
       },
       b: {
         title: 'Frontend & Ruby',
@@ -92,7 +92,7 @@ const projects = [
     cards: {
       a: {
         title: 'Backend Development with TDD',
-        text: 'I employed Test-Driven Development with Capybara, Selenium, and RSpec to ensure robust and reliable functionality. This approach allowed me to iteratively build and test features, ensuring high code quality and performance.',
+        text: 'I employed Test-Driven Development with Capybara, Selenium, and RSpec to ensure a reliable functionality.',
       },
       b: {
         title: 'Mobile-First Design and User Experience',
@@ -118,8 +118,8 @@ const projects = [
     repo: 'https://github.com/PabloEGonz/air-quality-app',
     cards: {
       a: {
-        title: 'API Integration and State Management',
-        text: 'I integrated two APIs: one for fetching city data and another for retrieving air quality information, handled through Axios. I implemented Redux Toolkit for state management.',
+        title: "API's & State Management",
+        text: 'I integrated two APIs: one for fetching city data and another for retrieving air quality data, handled through Axios, the state is managed with Redux Toolkit.',
       },
       b: {
         title: 'Frontend Testing',
