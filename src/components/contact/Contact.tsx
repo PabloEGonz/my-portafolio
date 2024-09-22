@@ -9,14 +9,14 @@ const Contact: NextPage<Props> = ({}) => {
   return (
     <section
       id='contact'
-      className='flex flex-col items-center py-10 lg:flex-row lg:justify-between lg:gap-20 lg:px-40'
+      className='flex flex-col items-center gap-5 pt-10 lg:flex-row lg:justify-between lg:gap-20 lg:px-20'
     >
       <div className='absolute left-0 flex h-full w-full overflow-x-hidden'>
         <ThreeObject />
       </div>
-      <h3 className='w-1/1 z-10 p-10 text-4xl font-semibold text-black lg:w-1/3 lg:p-0'>
+      <h3 className='w-1/1 z-10 rounded-b-[2rem] bg-white/30 lg:bg-white/0 lg:backdrop-blur-none p-10 text-center lg:text-left text-3xl font-extralight text-[#000] backdrop-blur-xl lg:w-2/5 lg:text-5xl lg:font-extrabold'>
         Contact me so we can discuss how I can help bring your digital projects
-        to life, and let&apos;s make something great together!
+        to life. Let&apos;s make something great together!
       </h3>
       <BackgroundGradient containerClassName='px-2 lg:px-10 w-[90%] lg:w-1/3 lg:p-2'>
         <form
