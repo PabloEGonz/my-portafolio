@@ -1,4 +1,4 @@
-import React from 'react';
+import '@/styles/gooey-background.css';
 
 const BackgroundGradient = () => {
   return (
