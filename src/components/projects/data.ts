@@ -1,5 +1,3 @@
-import { a } from 'framer-motion/client';
-
 const projects = [
   {
     name: 'Event Planning Website',
@@ -34,7 +32,7 @@ const projects = [
       " I created a modern static website for a wood furniture company. It features a homepage, about page, and product pages, showcasing the company's offerings with a sleek, contemporary design.",
     image: '/furniture.png',
     techs: ['React', 'Vite', 'TypeScript', 'Tailwind', 'CSS', 'React Router'],
-    live: 'https://cinco-estrellas.netlify.app/',
+    live: 'https://galeriacincoestrellas.com/',
     cards: {
       a: {
         title: 'Cutting-Edge Technologies',
