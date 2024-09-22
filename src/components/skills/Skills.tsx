@@ -23,7 +23,7 @@ const Skills: NextPage<Props> = ({}) => {
       <BackgroundGradient />
       <div className='absolute left-0 top-0 flex h-full w-full items-center justify-center'>
         <section className='flex flex-row flex-wrap flex-shrink gap-6 pb-10 lg:gap-20 justify-center'>
-          <div className='basis-1/3 lg:basis-auto order-first'>
+          <div className='basis-1/3 md:basis-1/4 lg:basis-auto order-first'>
             <h5 className='mb-3 text-3xl font-bold text-black drop-shadow-lg'>
               Frontend
             </h5>
@@ -33,7 +33,7 @@ const Skills: NextPage<Props> = ({}) => {
               ))}
             </ul>
           </div>
-          <div className='basis-1/3 lg:basis-auto'>
+          <div className='basis-1/3 md:basis-1/4 lg:basis-auto'>
             <h5 className='mb-3 text-3xl font-bold text-black drop-shadow-lg'>
               Backend
             </h5>
@@ -43,7 +43,7 @@ const Skills: NextPage<Props> = ({}) => {
               ))}
             </ul>
           </div>
-          <div className='basis-1/3 lg:basis-auto order-first lg:order-last'>
+          <div className='basis-1/3 md:basis-1/4 lg:basis-auto order-first lg:order-last'>
             <h5 className='mb-3 text-3xl font-bold text-black drop-shadow-lg'>
               Libraries
             </h5>
@@ -53,7 +53,7 @@ const Skills: NextPage<Props> = ({}) => {
               ))}
             </ul>
           </div>
-          <div className='basis-1/3 lg:basis-auto'>
+          <div className='basis-1/3 md:basis-1/4 lg:basis-auto'>
             <h5 className='mb-3 text-3xl font-bold text-black drop-shadow-lg'>
               Testing
             </h5>
@@ -63,7 +63,7 @@ const Skills: NextPage<Props> = ({}) => {
               ))}
             </ul>
           </div>
-          <div className='basis-1/3 lg:basis-auto'>
+          <div className='basis-1/3 md:basis-1/4 lg:basis-auto'>
             <h5 className='mb-3 text-3xl font-bold text-black drop-shadow-lg'>
               Tools
             </h5>
