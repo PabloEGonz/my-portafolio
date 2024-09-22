@@ -10,6 +10,7 @@ import {
 } from 'framer-motion';
 
 export const AnimatedTooltip = () => {
+  const greetings = ['Hi 👋', 'Hi 👋', 'Hola 👋', 'Salut 👋'];
   const [hovered, setHovered] = useState(false);
   const springConfig = { stiffness: 100, damping: 5 };
   const x = useMotionValue(0); // going to set this value on mouse move
@@ -60,7 +61,7 @@ export const AnimatedTooltip = () => {
               <div className='absolute inset-x-10 -bottom-px z-30 h-px w-[20%] bg-gradient-to-r from-transparent via-emerald-500 to-transparent ' />
               <div className='absolute -bottom-px left-10 z-30 h-px w-[40%] bg-gradient-to-r from-transparent via-sky-500 to-transparent ' />
               <div className='relative z-30 text-base font-bold text-white'>
-                Hi... 👋
+                {greetings[Math.floor(Math.random() * greetings.length)]}
               </div>
             </motion.div>
           )}
