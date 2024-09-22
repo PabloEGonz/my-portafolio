@@ -55,6 +55,15 @@ const Geometries = () => {
         new THREE.MeshStandardMaterial({ color: 0x14b8a6, metalness: 0.3 }),
     ]
 
+    const soundEffects = [
+        new Audio("/sounds/audio1.ogg"),
+        new Audio("/sounds/audio2.ogg"),
+        new Audio("/sounds/audio3.ogg"),
+        new Audio("/sounds/audio4.ogg"),
+        new Audio("/sounds/audio5.ogg"),
+        new Audio("/sounds/audio6.ogg"),
+        new Audio("/sounds/audio7.ogg"),        
+      ];
     return geometries.map(({position, r, geometry}) => (
         <Geometry 
          key={JSON.stringify(position)} 
@@ -64,12 +73,13 @@ const Geometries = () => {
          materials={materials} 
          hovered={hovered}      
          updateHover={updateHover}
+         audioEffects={soundEffects} 
         />
 )
  )}
 
 
-const Geometry = ({ geometry, materials, position, r, hovered, updateHover }) => {
+const Geometry = ({ geometry, materials, position, r, hovered, updateHover, audioEffects }) => {
     const meshRef = useRef();
     const [visible, setVisible] = useState(false);
 
@@ -81,6 +91,8 @@ const Geometry = ({ geometry, materials, position, r, hovered, updateHover }) =>
 
     const handleClick = (e) => {
         const mesh = e.object;
+
+        gsap.utils.random(audioEffects).play();
 
         gsap.to(mesh.rotation, {
             x: `+=${gsap.utils.random(0, 2)}`,

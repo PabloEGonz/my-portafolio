@@ -22,7 +22,8 @@ const ThreeObject = () => {
 const Geometry = () => {
     
 const ring = new THREE.TorusKnotGeometry( 4, 1, 15, 6 );
-const material = new THREE.MeshStandardMaterial({ color: 0x4f46e5, roughness: 0.2, emissive: 0x14b8a6, emissiveIntensity: 0.4 });
+const material = new THREE.MeshStandardMaterial({ color: 0x4f46e5, roughness: 0.3, emissive: 0x14b8a6, emissiveIntensity: 0.15, metalness: 0.5 });
+const soundEffect = new Audio("/sounds/audio1.ogg");
 
     return  (
         <Ring 
@@ -30,18 +31,19 @@ const material = new THREE.MeshStandardMaterial({ color: 0x4f46e5, roughness: 0.
         material={material} 
         position={[0, 0, 0].map((p) => p*2)} 
         r={0.2} 
+        soundEffect={soundEffect}
         />  
 )
 }
 
-const Ring = ({ geometry, material, position, r }) => {
+const Ring = ({ geometry, material, position, r, soundEffect }) => {
     const meshRef = useRef();
     const [hovered, setHovered] = useState(false);
 
 
     const handleClick = (e) => {
+        soundEffect.play();
         const mesh = e.object;
-
         gsap.to(mesh.rotation, {
             x: `+=${gsap.utils.random(0, 2)}`,
             y: `+=${gsap.utils.random(0, 2)}`,
