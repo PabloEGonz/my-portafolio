@@ -71,6 +71,33 @@ const projects = [
     },
   },
   {
+    name: 'Tasks Tracker App',
+    description:
+      'A task management web app where users can be either bosses or employees. Bosses assign tasks to employees, which appear on their dashboards. Employees can track and complete tasks, with progress automatically updated to reflect completion.',
+    image: '/employees-tasks.png',
+    techs: [
+      'Heroku',
+      'Micro Services',
+      'Ruby on Rails',
+      'MVC',
+      'PostgreSQL',
+      'Ruby',
+      'Tailwind',
+      'Devise',
+    ],
+    demo: 'https://youtube.com/shorts/3W_7w6Ud-pM',
+    cards: {
+      a: {
+        title: 'PostgreSQL on Heroku',
+        text: 'Deployed the database on Heroku. Configured the app for seamless database management, ensuring scalability and performance in a cloud environment.',
+      },
+      b: {
+        title: 'Automated Task Renewal',
+        text: 'Tasks automatically regenerate based on their set frequency (daily, weekly, etc.), eliminating the need for manual recreation. Once an employee completes a task, a new instance is created, ensuring ongoing task management with minimal effort.',
+      },
+    },
+  },
+  {
     name: 'Budget App',
     description:
       'A web application for easy budget management. It categorizes transactions, helping you track spending habits and make informed financial decisions.',
