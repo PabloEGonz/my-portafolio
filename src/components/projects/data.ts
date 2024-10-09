@@ -1,5 +1,54 @@
 const projects = [
   {
+    name: 'Mental Health Website',
+    description:
+      'I created a website for professional who offer axiety coaching services. It includes a homepage, testimonials, services, blog, and contact pages, all designed with responsiveness for optimal viewing on any device.',
+    image: '/anxietyWebsite.png',
+    techs: [
+      'Framer',
+      'React',
+      'CSS',
+      'CMS',
+    ],
+    live: 'https://anxietycoach.ing',
+    cards: {
+      a: {
+        title: 'Components Design & Animation',
+        text: "I created custom components using Framer, ensuring an engaging user experience. I also implemented animations to enhance the site's visual appeal and user interaction.",
+      },
+      b: {
+        title: 'Responsive Design',
+        text: 'I developed the website ensuring responsiveness across all devices. This included optimizing the layout for mobile, tablet, and desktop, ensuring a nice user experience regardless of the device.',
+      },
+    },
+  },
+  {
+    name: 'Chartering Company Website',
+    description:
+      'I developed a custom child theme for a cargo transportation company to display water level data based on specific locations. It integrates with an API to fetch real-time data, which is then stored in a database for historical access.',
+    image: '/waterLevel.png',
+    techs: [
+      'WordPress',
+      'Elementor',
+      'CSS',
+      'PHP',
+      'SQL',
+      'Crone Jobs',
+      'REST API Integration',
+    ],
+    live: 'https://armarisbevrachtingen.com/',
+    cards: {
+      a: {
+        title: 'API Integration & Data Storage',
+        text: "I creted a script to fetch the locations from the database then, a helper class is used to fetch data using the UUID for each location, it pulls the lastest data and check if it is already in the database, if it's not it's stored",
+      },
+      b: {
+        title: 'Crone Job & Data Updates',
+        text: 'I set up a cron job to fetch data once a day, this cron job runs the script that fetches the data from the API and stores it in the database for historical access, allowing users to view water levels for specific locations over time.',
+      },
+    },
+  },
+  {
     name: 'Event Planning Website',
     description:
       'I built a static website for a company offering private event assistance. It includes a homepage, about, services, and contact pages, all designed with responsiveness for optimal viewing on any device.',
@@ -152,25 +201,25 @@ const projects = [
       },
     },
   },
-  {
-    name: 'Chinese Zodiac Animal',
-    description:
-      'This is a webpage that tells you what Chinese zodiac sign you are, you have to enter your date of birth and it will show your zodiac animal.',
-    image: '/chineseZodiac.png',
-    techs: ['Vite', 'TypeScript', 'Bootstrap', 'SCCS', 'Redux', 'React Router'],
-    live: 'https://knowyourchinesezodiacanimal.netlify.app/',
-    repo: 'https://github.com/PabloEGonz/chineseZodiac',
-    cards: {
-      a: {
-        title: 'Code Logic and Third-Party Integration',
-        text: 'I developed the core logic using TypeScript, I also integrated third-party libraries to streamline development and enhance functionality.',
-      },
-      b: {
-        title: 'State Management',
-        text: 'I used Redux to manage state and ensure seamless data flow throughout the application. This allowed for efficient data management and a smooth user experience.',
-      },
-    },
-  },
+  // {
+  //   name: 'Chinese Zodiac Animal',
+  //   description:
+  //     'This is a webpage that tells you what Chinese zodiac sign you are, you have to enter your date of birth and it will show your zodiac animal.',
+  //   image: '/chineseZodiac.png',
+  //   techs: ['Vite', 'TypeScript', 'Bootstrap', 'SCCS', 'Redux', 'React Router'],
+  //   live: 'https://knowyourchinesezodiacanimal.netlify.app/',
+  //   repo: 'https://github.com/PabloEGonz/chineseZodiac',
+  //   cards: {
+  //     a: {
+  //       title: 'Code Logic and Third-Party Integration',
+  //       text: 'I developed the core logic using TypeScript, I also integrated third-party libraries to streamline development and enhance functionality.',
+  //     },
+  //     b: {
+  //       title: 'State Management',
+  //       text: 'I used Redux to manage state and ensure seamless data flow throughout the application. This allowed for efficient data management and a smooth user experience.',
+  //     },
+  //   },
+  // },
   // {
   //   name: 'December Countdown',
   //   description:
