@@ -9,17 +9,28 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/navbar": "^2.0.37",
+    "@radix-ui/react-accordion": "^1.2.0",
+    "@react-three/drei": "^9.112.0",
+    "@react-three/fiber": "^8.17.7",
     "atropos": "^2.0.2",
+    "clsx": "^2.1.1",
+    "color-thief-react": "^2.1.0",
+    "framer-motion": "^11.5.4",
+    "gsap": "^3.12.5",
     "next": "13.5.4",
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^4.11.0"
+    "react-icons": "^4.11.0",
+    "tailwind-merge": "^2.5.2",
+    "three": "^0.168.0"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/three": "^0.168.0",
     "autoprefixer": "^10",
     "daisyui": "^3.9.2",
     "eslint": "^8",

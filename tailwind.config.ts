@@ -14,55 +14,58 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-      animation: {
-        typewriter: 'typewriter 2s steps(11) forwards',
-        caret:
-          'typewriter 2s steps(11) forwards, blink 1s steps(11) infinite 2s',
+      colors: {
+        black: '#212529',
+        'text-white': '#fff',
+        white: '#f8f9fa',
+        primary: '#343a40',
+        pink: '#E60576',
+        glass: '#fafafa35',
+        secondary: '#e9ecef',
+        purple: '#8258ff',
+        opacity: '#051622d0',
       },
       keyframes: {
-        typewriter: {
+        'accordion-down': {
+          from: {
+            height: '0',
+          },
           to: {
-            left: '100%',
+            height: 'var(--radix-accordion-content-height)',
           },
         },
-        blink: {
+        'accordion-up': {
+          from: {
+            height: 'var(--radix-accordion-content-height)',
+          },
+          to: {
+            height: '0',
+          },
+        },
+        spotlight: {
           '0%': {
             opacity: '0',
-          },
-          '0.1%': {
-            opacity: '1',
-          },
-          '50%': {
-            opacity: '1',
-          },
-          '50.1%': {
-            opacity: '0',
+            transform: 'translate(-95%, -90%) scale(0.5)',
           },
           '100%': {
-            opacity: '0',
+            opacity: '1',
+            transform: 'translate(-50%, -80%) scale(1)',
           },
         },
       },
-    },
-    colors: {
-      black: '#001621',
-      white: '#fff',
-      primary: '#1a9e97',
-      pink: '#E60576',
-      glass: '#fafafa35',
-      secondary: '#DEB992',
-      purple: '#8258ff',
-      opacity: '#051622d0',
-      sun: '#facc15',
-      red: '#ff453a',
+      animation: {
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out',
+        spotlight: 'spotlight 2s ease .75s 1 forwards',
+      },
     },
   },
   daisyui: {
     themes: [
       {
         mytheme: {
-          primary: '#1a9e97',
-          secondary: '#DEB992',
+          primary: '#343a40',
+          secondary: '#e9ecef',
           accent: '#1dcdbc',
           neutral: '#2b3440',
           'base-100': '#ffffff',
