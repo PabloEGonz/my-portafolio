@@ -2,7 +2,7 @@ const projects = [
   {
     name: 'Mental Health Website',
     description:
-      'I created a website for professional who offer axiety coaching services. It includes a homepage, testimonials, services, blog, and contact pages, all designed with responsiveness for optimal viewing on any device.',
+      'I created a website for a professional who offers anxiety coaching services. It includes a homepage, testimonials, services, blog, and contact pages, all designed with responsiveness for optimal viewing on any device.',
     image: '/anxietyWebsite.png',
     techs: [
       'Framer',
@@ -30,11 +30,11 @@ const projects = [
     techs: [
       'WordPress',
       'Elementor',
-      'CSS',
       'PHP',
       'SQL',
       'Crone Jobs',
       'REST API Integration',
+      'CSS',
     ],
     live: 'https://armarisbevrachtingen.com/',
     cards: {
