@@ -1,15 +1,28 @@
 const projects = [
   {
+    name: 'Wedding Planner Website',
+    description:
+      'I built a wedding planner website featuring a modern, elegant design with smooth animations, a romantic color palette, and key pages—home, about, services, gallery, and contact',
+    image: '/wedding-planner.png',
+    techs: ['Framer', 'React', 'CSS', 'Framer Motion', 'SEO'],
+    live: 'https://logical-times-053771.framer.app',
+    cards: {
+      a: {
+        title: 'Unique Design',
+        text: 'I crafted a unique design with a soft color palette, refined animations, and carefully chosen elegant fonts, creating an inviting and polished look that aligns with the wedding planning theme.',
+      },
+      b: {
+        title: 'SEO Optimization',
+        text: 'I implemented SEO optimization by using targeted keywords, crafting descriptive meta tags, and structuring headings for clarity. I optimized image sizes and alt text to improve loading speed and accessibility.',
+      },
+    },
+  },
+  {
     name: 'Mental Health Website',
     description:
       'I created a website for a professional who offers anxiety coaching services. It includes a homepage, testimonials, services, blog, and contact pages, all designed with responsiveness for optimal viewing on any device.',
     image: '/anxietyWebsite.png',
-    techs: [
-      'Framer',
-      'React',
-      'CSS',
-      'CMS',
-    ],
+    techs: ['Framer', 'React', 'CSS', 'CMS'],
     live: 'https://anxietycoach.ing',
     cards: {
       a: {
