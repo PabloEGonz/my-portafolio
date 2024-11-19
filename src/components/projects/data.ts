@@ -5,7 +5,7 @@ const projects = [
       'I built a wedding planner website featuring a modern, elegant design with smooth animations, a romantic color palette, and key pages—home, about, services, gallery, and contact',
     image: '/wedding-planner.png',
     techs: ['Framer', 'React', 'CSS', 'Framer Motion', 'SEO'],
-    live: 'https://logical-times-053771.framer.app',
+    live: 'https://wedding-planner-template.framer.website/',
     cards: {
       a: {
         title: 'Unique Design',
