@@ -14,10 +14,14 @@ const Contact: NextPage<Props> = ({}) => {
       <div className='absolute left-0 flex h-full w-full overflow-x-hidden'>
         <ThreeObject />
       </div>
-      <h3 className='w-1/1 lg:w-2/5 z-10 rounded-[2rem] bg-white/30 lg:bg-white/0 lg:backdrop-blur-none p-10 text-center lg:text-left text-3xl font-extralight text-[#000] backdrop-blur-xl lg:text-5xl lg:font-extrabold'>
-        Contact me so we can discuss how I can help bring your digital projects
-        to life. Let&apos;s make something great together!
-      </h3>
+      <div className='w-1/1 z-10 space-y-6 rounded-[2rem] bg-white/30 p-10 text-[#000] backdrop-blur-xl lg:w-2/5 lg:bg-white/0 lg:backdrop-blur-none'>
+        <h3 className='text-center text-3xl lg:text-left lg:text-5xl'>
+          Ready to bring your digital project to life?
+        </h3>
+        <h3 className='text-balance text-center text-3xl lg:text-left lg:text-5xl'>
+          Let&apos;ss connect.
+        </h3>
+      </div>
       <BackgroundGradient containerClassName='p-4 w-[90%] md:w-2/3 lg:w-1/3'>
         <form
           action='https://formspree.io/f/xwkjrpwp'
