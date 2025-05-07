@@ -56,7 +56,7 @@ export function Project({
             alt={name}
             width={500}
             height={500}
-            className='h-full w-full rounded-3xl object-cover'
+            className='h-full w-full rounded-lg object-cover'
           />
         </BackgroundGradient>
         <WobbleCard
