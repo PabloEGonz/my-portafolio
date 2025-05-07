@@ -1,10 +1,28 @@
 const projects = [
   {
+    name: '3D Rendering Website',
+    description:
+      'I designed and developed a wedding planner website with a modern, elegant layout, smooth animations, and a fully responsive design. The site includes essential pages like Home, About, Services, Gallery, and Contact, optimized for performance and seamless user experience across all devices.',
+    image: '/3d-studio.png',
+    techs: ['Code', 'Next.js', 'React', 'Tailwind', 'Framer Motion', 'SEO'],
+    live: 'https://teran-studio-smoky.vercel.app/',
+    cards: {
+      a: {
+        title: 'Smooth Animations',
+        text: 'I integrated smooth, subtle animations to enhance user engagement without overwhelming the design. These animations guide attention, improve interactivity, and contribute to a refined, modern user experience.',
+      },
+      b: {
+        title: 'Modern, Responsive Design',
+        text: 'I designed a fully responsive layout that adapts seamlessly to all screen sizes. The clean structure, balanced spacing, and thoughtful visual hierarchy ensure a consistent and aesthetically pleasing experience across devices.',
+      },
+    },
+  },
+  {
     name: 'Wedding Planner Website',
     description:
       'I built a wedding planner website featuring a modern, elegant design with smooth animations, a romantic color palette, and key pages—home, about, services, gallery, and contact',
     image: '/wedding-planner.png',
-    techs: ['Framer', 'React', 'CSS', 'Framer Motion', 'SEO'],
+    techs: ['No Code', 'Framer', 'React', 'CSS', 'Framer Motion', 'SEO'],
     live: 'https://wedding-planner-template.framer.website/',
     cards: {
       a: {
@@ -22,7 +40,7 @@ const projects = [
     description:
       'I created a website for a professional who offers anxiety coaching services. It includes a homepage, testimonials, services, blog, and contact pages, all designed with responsiveness for optimal viewing on any device.',
     image: '/anxietyWebsite.png',
-    techs: ['Framer', 'React', 'CSS', 'CMS'],
+    techs: ['No Code', 'Framer', 'React', 'CSS', 'CMS'],
     live: 'https://anxietycoach.ing',
     cards: {
       a: {
@@ -41,6 +59,7 @@ const projects = [
       'I developed a custom child theme for a cargo transportation company to display water level data based on specific locations. It integrates with an API to fetch real-time data, which is then stored in a database for historical access.',
     image: '/waterLevel.png',
     techs: [
+      'Code',
       'WordPress',
       'Elementor',
       'PHP',
@@ -67,6 +86,7 @@ const projects = [
       'I built a static website for a company offering private event assistance. It includes a homepage, about, services, and contact pages, all designed with responsiveness for optimal viewing on any device.',
     image: '/events.jpg',
     techs: [
+      'Code',
       'React',
       'Next.js',
       'TypeScript',
@@ -76,7 +96,7 @@ const projects = [
       'Flowbite',
       'Daisy UI',
     ],
-    live: 'https://partyeventsbyaio.com/',
+    live: 'https://party-events-website-pabloegonzs-projects.vercel.app/',
     cards: {
       a: {
         title: 'Google Tag Manager Integration',
@@ -93,7 +113,15 @@ const projects = [
     description:
       " I created a modern static website for a wood furniture company. It features a homepage, about page, and product pages, showcasing the company's offerings with a sleek, contemporary design.",
     image: '/furniture.png',
-    techs: ['React', 'Vite', 'TypeScript', 'Tailwind', 'CSS', 'React Router'],
+    techs: [
+      'Code',
+      'React',
+      'Vite',
+      'TypeScript',
+      'Tailwind',
+      'CSS',
+      'React Router',
+    ],
     live: 'https://galeriacincoestrellas.com/',
     cards: {
       a: {
@@ -112,6 +140,7 @@ const projects = [
       'A full-stack e-commerce website for a French bakery, offering a wide range of baked goods. It features product browsing, a shopping cart, checkout process, and a user panel for viewing orders and customer details.',
     image: '/bakery.jpg',
     techs: [
+      'Code',
       'Ruby on Rails',
       'PostgreSQL',
       'Ruby',
@@ -138,6 +167,7 @@ const projects = [
       'A task management web app where users can be either bosses or employees. Bosses assign tasks to employees, which appear on their dashboards. Employees can track and complete tasks, with progress automatically updated to reflect completion.',
     image: '/employees-tasks.png',
     techs: [
+      'Code',
       'Heroku',
       'Micro Services',
       'Ruby on Rails',
@@ -165,6 +195,7 @@ const projects = [
       'A web application for easy budget management. It categorizes transactions, helping you track spending habits and make informed financial decisions.',
     image: '/budget.png',
     techs: [
+      'Code',
       'Ruby on Rails',
       'PostgreSQL',
       'RSpec',
@@ -187,71 +218,6 @@ const projects = [
       },
     },
   },
-  {
-    name: 'Air Quality Web App',
-    description:
-      'This web app allows you to monitor air quality across various cities. You can view air quality data, add or remove cities, and learn about the parameters used to assess air quality.',
-    image: '/airQuality.png',
-    techs: [
-      'React',
-      'Redux',
-      'React Router',
-      'Axios',
-      'Bootstrap',
-      'CSS3',
-      'Jest',
-    ],
-    live: 'https://cities-air-quality-pg.netlify.app/',
-    repo: 'https://github.com/PabloEGonz/air-quality-app',
-    cards: {
-      a: {
-        title: "API's & State Management",
-        text: 'I integrated two APIs: one for fetching city data and another for retrieving air quality data, handled through Axios, the state is managed with Redux Toolkit.',
-      },
-      b: {
-        title: 'Frontend Testing',
-        text: 'I ensured code reliability by writing tests using Jest. This included snapshot testing for UI consistency, mocking API calls to simulate real-world scenarios, and DOM testing to validate user interactions.',
-      },
-    },
-  },
-  // {
-  //   name: 'Chinese Zodiac Animal',
-  //   description:
-  //     'This is a webpage that tells you what Chinese zodiac sign you are, you have to enter your date of birth and it will show your zodiac animal.',
-  //   image: '/chineseZodiac.png',
-  //   techs: ['Vite', 'TypeScript', 'Bootstrap', 'SCCS', 'Redux', 'React Router'],
-  //   live: 'https://knowyourchinesezodiacanimal.netlify.app/',
-  //   repo: 'https://github.com/PabloEGonz/chineseZodiac',
-  //   cards: {
-  //     a: {
-  //       title: 'Code Logic and Third-Party Integration',
-  //       text: 'I developed the core logic using TypeScript, I also integrated third-party libraries to streamline development and enhance functionality.',
-  //     },
-  //     b: {
-  //       title: 'State Management',
-  //       text: 'I used Redux to manage state and ensure seamless data flow throughout the application. This allowed for efficient data management and a smooth user experience.',
-  //     },
-  //   },
-  // },
-  // {
-  //   name: 'December Countdown',
-  //   description:
-  //     'A handy tool to keep track of the days leading up to December. Get excited as you watch the countdown timer ticking closer to the holiday season.',
-  //   image: '/xmas.png',
-  //   techs: ['Webpack', 'HTML', 'CSS3', 'JavaScript'],
-  //   live: 'https://decembercountdown.netlify.app/',
-  //   repo: 'https://github.com/PabloEGonz/decemberCountdown',
-  //   cards: {
-  //     a: {
-  //       title: 'Events Website',
-  //       text: 'As a freelance web developer, I was hired to create this static website for a company providing assistance for private events.',
-  //     },
-  //     b: {
-  //       title: 'Tech Stack',
-  //       text: 'React, Next.js, TypeScript, Tailwind, Redux',
-  //     },
-  //   },
-  // },
 ];
 
 export default projects;
