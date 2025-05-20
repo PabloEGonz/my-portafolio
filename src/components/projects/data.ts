@@ -2,7 +2,7 @@ const projects = [
   {
     name: '3D Rendering Website',
     description:
-      'I designed and developed a wedding planner website with a modern, elegant layout, smooth animations, and a fully responsive design. The site includes essential pages like Home, About, Services, Gallery, and Contact, optimized for performance and seamless user experience across all devices.',
+      'I designed and developed a website for a 3D Studio with a modern, elegant layout, smooth animations, and a fully responsive design. The site includes essential pages like Home, About, Services, Gallery, and Contact, optimized for performance and seamless user experience across all devices.',
     image: '/3d-studio.png',
     techs: ['Code', 'Next.js', 'React', 'Tailwind', 'Framer Motion', 'SEO'],
     live: 'https://teran-studio-smoky.vercel.app/',
