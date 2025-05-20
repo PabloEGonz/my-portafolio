@@ -20,7 +20,7 @@ const projects = [
   {
     name: 'Wedding Planner Website',
     description:
-      'I built a wedding planner website featuring a modern, elegant design with smooth animations, a romantic color palette, and key pages—home, about, services, gallery, and contact',
+      'I built a wedding planner website featuring a modern, elegant design with smooth animations, a romantic color palette, and key pages—home, about, services, gallery, and contact.',
     image: '/wedding-planner.png',
     techs: ['No Code', 'Framer', 'React', 'CSS', 'Framer Motion', 'SEO'],
     live: 'https://wedding-planner-template.framer.website/',
@@ -72,7 +72,7 @@ const projects = [
     cards: {
       a: {
         title: 'API Integration & Data Storage',
-        text: "I creted a script to fetch the locations from the database then, a helper class is used to fetch data using the UUID for each location, it pulls the lastest data and check if it is already in the database, if it's not it's stored",
+        text: "I creted a script to fetch the locations from the database then, a helper class is used to fetch data using the UUID for each location, it pulls the lastest data and check if it is already in the database, if it's not it's stored.",
       },
       b: {
         title: 'Crone Job & Data Updates',
@@ -130,7 +130,7 @@ const projects = [
       },
       b: {
         title: 'Optimized Performance ',
-        text: 'I developed focusing on maintaining high performance despite a large volume of images. By using best practices, I optimized the site for fast load times and smooth user experience, ensuring that the extensive imagery did not compromise performance',
+        text: 'I developed focusing on maintaining high performance despite a large volume of images. By using best practices, I optimized the site for fast load times and smooth user experience, ensuring that the extensive imagery did not compromise performance.',
       },
     },
   },
@@ -214,7 +214,7 @@ const projects = [
       },
       b: {
         title: 'Mobile-First Design and User Experience',
-        text: 'I employed a mobile-first design strategy with CSS3 and Bootstrap. This approach ensures a responsive and user-friendly experience across various devices, optimizing the application for usability and accessibility',
+        text: 'I employed a mobile-first design strategy with CSS3 and Bootstrap. This approach ensures a responsive and user-friendly experience across various devices, optimizing the application for usability and accessibility.',
       },
     },
   },
